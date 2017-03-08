@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Card from "./Card/Card.jsx";
 import Modal from './modal/modal.jsx';
 import wireframe from './img/maquette.jpg'
 import Footer from'./Footer/Footer.jsx';
@@ -11,9 +10,8 @@ class App extends Component {
     return (
       <div className="App">
      
-      <Header></Header>
+        <Header></Header>
         <Grid />
-        <Card />
         <Footer></Footer>
       </div>
     );

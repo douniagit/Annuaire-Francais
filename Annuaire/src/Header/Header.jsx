@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import './header.css';
-import './Header.css'
+import './Header.css';
 import Logo from '../../public/assets/logo-cocoricourse.png';
 
 class Header extends Component {
@@ -8,7 +7,7 @@ class Header extends Component {
     return (
       <div className="Header">
         <div className= "main-header">
-          <img className="logo" src={ Logo }></img>
+          <img className="logo" src={Logo}></img>
 
         </div>
       </div>

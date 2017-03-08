@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './Grid.css';
-import Dropdown from './dropdown/Dropdown.jsx';
-import Input from './input/Input.jsx';
+import Dropdown from '../Dropdown/Dropdown.jsx';
+import Input from '../Input/Input.jsx';
+import Card from "../Card/Card.jsx";
 
 class Grid extends Component {
   render() {
@@ -9,6 +10,7 @@ class Grid extends Component {
       <div className="grid">
         <Dropdown />
         <Input />
+        <Card />
       </div>
     );
   }
