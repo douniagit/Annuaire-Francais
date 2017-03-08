@@ -1,5 +1,10 @@
 .Dropdown {
   background: #dadada;
-  width: 1140px;
-  display: flex;
+  width: 100%;
+
+}
+
+.Dropdown li {
+  float: left;
+  list-style: none
 }

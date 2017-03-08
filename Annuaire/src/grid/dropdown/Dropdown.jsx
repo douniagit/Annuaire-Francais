@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+
 import './Dropdown.css';
 
 class Dropdown extends Component {
   render() {
     return (
-      <div className="Dropdown">
+      <div className="Dropdown group">
         <h2>Filtrez votre recherche</h2>
         <ul>
           <li><a href="#">Level</a></li>
