@@ -4,7 +4,7 @@ import Modal from './modal/modal.jsx';
 import wireframe from './img/maquette.jpg'
 import Footer from'./Footer/Footer.jsx';
 import Header from './Header/Header.jsx';
-import Grid from './grid/Grid.jsx';
+import Grid from './Grid/Grid.jsx';
 
 class App extends Component {
   render() {
