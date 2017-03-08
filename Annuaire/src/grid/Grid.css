@@ -1,0 +1,15 @@
+/* HELPERS */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.body {
+  background-color: #f1f1f1;
+}
+
+.grid {
+  width: 100%;
+  margin: 0 auto;
+}
