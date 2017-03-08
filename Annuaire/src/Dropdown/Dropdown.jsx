@@ -7,7 +7,7 @@ class Dropdown extends Component {
     return (
       <div className="Dropdown group">
         <h2>Filtrez votre recherche</h2>
-        <ul>
+        <ul className="group dropdown-list">
           <li><a href="#">Level</a></li>
           <li><a href="#">Format</a></li>
           <li><a href="#">Age</a></li>

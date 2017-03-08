@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Card from "./Card/Card.jsx";
 import wireframe from './img/maquette.jpg'
-import Footer from'./Footer/Footer.jsx';
+import Footer from './Footer/Footer.jsx';
 import Header from './Header/Header.jsx';
 import Dropdown from './Dropdown/Dropdown.jsx';
 import Input from './Input/Input.jsx';
@@ -16,6 +16,7 @@ class App extends Component {
         <Footer></Footer>
         <Dropdown/>
         <Input/>
+
         <Card />
         <AddRessource/>
         <Footer></Footer>
