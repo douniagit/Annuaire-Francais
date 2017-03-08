@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import Modal from './modal/modal.jsx';
-import wireframe from './img/maquette.jpg'
 import Footer from'./Footer/Footer.jsx';
+import Grid from'./Grid/Grid.jsx';
 import Header from './Header/Header.jsx';
-import Grid from './Grid/Grid.jsx';
+import AddRessource from './modal/buttonModal.jsx'
+import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-     
         <Header></Header>
         <Grid />
+        <AddRessource/>
         <Footer></Footer>
       </div>
     );

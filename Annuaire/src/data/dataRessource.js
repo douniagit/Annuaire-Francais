@@ -59,3 +59,4 @@ var ressources = {
               'lien':'http://www.polarfle.com/'
             }],
             }
+ export default ressources;
