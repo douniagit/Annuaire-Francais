@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './Header.css'
+import './Grid.css';
 import Dropdown from './dropdown/Dropdown.jsx';
 import Input from './input/Input.jsx';
 
-class Header extends Component {
+class Grid extends Component {
   render() {
     return (
       <div className="Header">
@@ -14,4 +14,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default Grid;
