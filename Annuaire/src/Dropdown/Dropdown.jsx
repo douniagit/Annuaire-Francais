@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './Dropdown.css';
+import './dropdown.css';
 
 class Dropdown extends Component {
   render() {
