@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Footer from'./Footer/Footer.jsx';
+import Grid from './grid/Grid.jsx';
+
 
 
 class App extends Component {
@@ -7,9 +9,11 @@ class App extends Component {
     return (
       <div className="App">
         <Footer></Footer>
-        </div>
+        <Grid />
+      </div>
     );
   }
 }
+
 
 export default App;
