@@ -1,0 +1,11 @@
+.main-header {
+  margin: 0 auto;
+  background-color: rgba(255, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+}
+
+.logo{
+  width: 20em;
+  height: 5em;
+}
