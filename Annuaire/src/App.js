@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header/Header.jsx';
-import Grid from './grid/Grid.jsx';
+import Grid from './Grid/Grid.jsx';
 
 class App extends Component {
   render() {

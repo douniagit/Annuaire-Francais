@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './Grid.css';
-import Dropdown from './dropdown/Dropdown.jsx';
-import Input from './input/Input.jsx';
+import './grid.css';
+import Dropdown from '../Dropdown/Dropdown.jsx';
+import Input from '../Input/Input.jsx';
 
 class Grid extends Component {
   render() {
