@@ -6,7 +6,7 @@ import Input from './input/Input.jsx';
 class Grid extends Component {
   render() {
     return (
-      <div className="Header">
+      <div className="Grid">
         <Dropdown />
         <Input />
       </div>
