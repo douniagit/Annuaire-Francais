@@ -5,7 +5,6 @@ class Dropdown extends Component {
   render() {
     return (
       <div className="dropdown">
-        <h2>Filtrez votre recherche</h2>
         <ul className="search-filter">
           <li className="level"><a href="#">Level</a>
             <ul className="sub-level-filter">
