@@ -17,7 +17,7 @@ class AddRessource extends Component {
       <div className="add-ressource">
         <h3 className="add-ressource-text">Ressources is missing?</h3>
         <button className="add-ressource-button" onClick={(e) => this.onClickHandler(e)}>Add yours</button>
-          <div className="modal" style={{display: (this.state.isClick)? 'flex': 'none'} }>
+        <div className="modal" style={{display: (this.state.isClick)? 'flex': 'none'} }>
             <div className="modal-container">
               <form action="">
                 <label htmlFor="nom">First name</label>
