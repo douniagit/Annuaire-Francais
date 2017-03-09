@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.modal{
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.47);
+}
+.modal-container{
+  background-color: rgb(226, 226, 226);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.37);
+  padding: 3vw;
+}
+.modal-container form{
+  display: flex;
+  flex-direction: column;
+}
+.modal-container label{
+  margin-top: 1vw;
+  color: rgb(107, 107, 107);
+  font-size: 1.5vw;
+}
+.modal-container input{
+  font-size: 20px;
+  width: 20vw;
+  font-weight: 300;
+  height: 2.5vw;
+  border: none;
+  box-shadow: 0 0 2px rgba(110, 110, 110, 0.67);
+  border-radius: 2px;
+  padding-left: 0.3vw;
+  font-size: 1.5vw;
+}
+.modal-container textarea{
+  font-size: 1.5vw;
+  font-weight: 300;
+  width: 40vw;
+  border: none;
+  box-shadow: 0 0 2px rgba(110, 110, 110, 0.67);
+  border-radius: 2px;
+  padding-left: 0.3vw;
+}
+.button-modal{
+  margin-top: 2vw;
+  width: 40vw;
+  display: flex;
+  justify-content: space-around;
+}
+.button-modal button{
+  padding: 1vw 3vw;
+  border: none;
+  font-size: 1.5vw;
+  color: white;
+  background: rgb(126, 126, 126);
+  transition: background 0.5s, color 0.5s;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(110, 110, 110, 0.67);
+}
+.button-modal button:hover{
+  background-color: rgb(206, 206, 206);
+  color: white;
+  outline: 0;
+}
+.button-modal button:focus{
+  outline: 0;
+}
+.add-ressource{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.add-ressource-text{
+  color: rgb(107, 107, 107);
+  font-size: 1.5vw;
+  margin-bottom: 1vw;
+}
+.add-ressource-button{
+  padding: 1vw 3vw;
+  border: none;
+  font-size: 15px;
+  color: white;
+  background: rgb(126, 126, 126);
+  transition: background 0.5s, color 0.5s;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(110, 110, 110, 0.67);
+}
+.add-ressource-button:hover{
+  background-color: rgb(206, 206, 206);
+  color: white;
+  outline: 0;
+}
+.add-ressource-button:focus{
+  outline: 0;
+}

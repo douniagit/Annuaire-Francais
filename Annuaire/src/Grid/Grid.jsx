@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Grid.css';
+import './grid.css';
 import Dropdown from '../Dropdown/Dropdown.jsx';
 import Input from '../Input/Input.jsx';
 
