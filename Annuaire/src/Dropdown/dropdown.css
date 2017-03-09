@@ -1,9 +1,12 @@
 .Dropdown {
-  background: #dadada;
   width: 100%;
 }
 
-.Dropdown li {
+.Dropdown-list {
+  background: #dadada;
+}
+
+.Dropdown-list li {
   float: left;
   list-style: none
 }
