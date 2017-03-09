@@ -129,3 +129,4 @@ var ressources = {
             },]
 
             }
+ export default ressources;

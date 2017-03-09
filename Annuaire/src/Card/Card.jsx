@@ -1,5 +1,6 @@
 import React from 'react';
 import './Card.css';
+import data from "../data/dataRessource.js";
 
 
 class Card extends React.Component {
@@ -7,13 +8,14 @@ class Card extends React.Component {
   render() {
     return (
       <div className="cardContainer">
-
+          <h4>150 ressources gratuites à disposition </h4>
+          {data.site.map(info =>
           <div className="contentCard">
                 <div className="Card">
-                  <img src="http://cdn05.branchez-vous.com/wp-content/uploads/2016/09/bge2-800x410.jpg" alt="cocoricoPicture" className="img"/>
+                  <img src="https://s-media-cache-ak0.pinimg.com/originals/e1/11/5a/e1115afea56dcaf0c273a4f3d9fc7f3a.jpg" alt="cocoricoPicture" className="img"/>
                   <div className="text">
-                    <div className="title">babel</div>
-                    <div className="desc">cours de langues goifghjktykeljg lzegkoer jgdljlkefioerj gkdjlsekfio ejhdkjb lkfozeg</div>
+                    <div className="title">{info.name}</div>
+                    <div className="desc">{info.description}</div>
                   </div>
                   <div className="wrapp">
                     <div className="icones">
@@ -24,7 +26,8 @@ class Card extends React.Component {
                   </div>
                 </div>
           </div>
-        
+        )
+        }  
       </div>
 
 
