@@ -1,12 +1,11 @@
 .Input {
   text-align: center;
-  width: 100%;
+  width: 80%;
 }
 
 .search-bar {
-  width: 100%;
   padding-left: 15px;
-  width: 90vw;
+  width: 80vw;
   height: 40px;
   border: 1px solid #e3e3e3;
 
