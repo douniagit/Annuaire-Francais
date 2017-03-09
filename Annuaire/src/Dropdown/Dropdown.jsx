@@ -37,12 +37,11 @@ class Dropdown extends Component {
   render() {
     return (
       <div className="dropdown">
-        <h2>Filtrez votre recherche</h2>
         <div className="search-filter">
-          <a href="#" onMouseOver={(e) => this.levelMouseOverHandler(e)} onMouseOut={(e) => this.levelMouseOutHandler(e)}>Level</a>
-          <a href="#" onMouseOver={(e) => this.formatMouseOverHandler(e)} onMouseOut={(e) => this.formatMouseOutHandler(e)}>Format</a>
-          <a href="#" onMouseOver={(e) => this.ageMouseOverHandler(e)} onMouseOut={(e) => this.ageMouseOutHandler(e)}>Age</a>
-          <a href="#" onMouseOver={(e) => this.languageMouseOverHandler(e)} onMouseOut={(e) => this.languageMouseOutHandler(e)}>Language</a>
+          <a href="#" onMouseOver={(e) => this.levelMouseOverHandler(e)} onMouseOut={(e) => this.levelMouseOutHandler(e)} style={{background: (this.state.isLevelMouseOver)? '#c3c1c1': '#dadada'}}>Level</a>
+          <a href="#" onMouseOver={(e) => this.formatMouseOverHandler(e)} onMouseOut={(e) => this.formatMouseOutHandler(e)} style={{background: (this.state.isFormatMouseOver)? '#c3c1c1': '#dadada'}}>Format</a>
+          <a href="#" onMouseOver={(e) => this.ageMouseOverHandler(e)} onMouseOut={(e) => this.ageMouseOutHandler(e)} style={{background: (this.state.isAgeMouseOver)? '#c3c1c1': '#dadada'}}>Age</a>
+          <a href="#" onMouseOver={(e) => this.languageMouseOverHandler(e)} onMouseOut={(e) => this.languageMouseOutHandler(e)} style={{background: (this.state.isLanguageMouseOver)? '#c3c1c1': '#dadada'}}>Language</a>
         </div>
         <div className="under-menu">
           <div className="sub-under-menu" onMouseOver={(e) => this.levelMouseOverHandler(e)} onMouseOut={(e) => this.levelMouseOutHandler(e)} style={{display: (this.state.isLevelMouseOver)? 'flex': 'none'}}>
