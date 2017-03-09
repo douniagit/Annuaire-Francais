@@ -1,1 +1,8 @@
-
+.container-footer {
+  height:170px;
+  width: 100%;
+  background-color: #B3B3B3;
+}
+.logo-simplon {
+display:flex;
+}
