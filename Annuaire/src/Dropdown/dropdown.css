@@ -1,9 +1,7 @@
 .dropdown {
-  margin: 0 auto 250px;
   font-size: 18px;
-  width: 98%;
+  width: 80vw;
 }
-
 .search-filter {
   background: #dadada;
   display: flex;
@@ -11,38 +9,38 @@
   align-items: center;
   padding: 0;
   margin: 0;
-  height: 54px;
-  margin-bottom: 50px;
-  position: relative;
+  height: 4vw;
 }
-
-.search-filter li {
-  list-style: none;
+.search-filter a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 25%;
+  height: 100%;
 }
-
-.sub-level-filter, .sub-format-filter, .sub-age-filter, .sub-lang-filter {
-  position: absolute;
-  background: #dadada;
-  padding: 0;
-  top:54px;
-  left: 72px;
-  width: 150px;
-  text-align: center;
-  display: none;
+.under-menu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  background: #b4b4b4;
 }
-
-.sub-format-filter {
-  left: 370px;
+.under-menu a{
+  text-decoration: none;
+  color: white;
+  margin: 0.3vw 0;
 }
-
-.sub-age-filter {
-  left: 670px;
+.under-menu a:hover{
+  color: rgb(69, 69, 69);
 }
-
-.sub-lang-filter {
-  left: 970px;
-}
-
-.level:hover .sub-level-filter, .format:hover .sub-format-filter, .age:hover .sub-age-filter, .lang:hover .sub-lang-filter  {
-  display: block;
+.sub-under-menu{
+  /*position: absolute;*/
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  height: 3vw;
 }
