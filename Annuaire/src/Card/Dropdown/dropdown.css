@@ -1,6 +1,8 @@
 .dropdown {
   font-size: 18px;
   width: 80vw;
+  margin-bottom: 2vw;
+  border-bottom: 0.3vw solid #c3c1c1;
 }
 .search-filter {
   background: #dadada;
@@ -20,12 +22,17 @@
   width: 25%;
   height: 100%;
 }
+.search-filter > a:hover{
+  background: #c3c1c1;
+}
 .under-menu{
+  position: absolute;
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 80vw;
-  background: #b4b4b4;
+  background: #c3c1c1;
+
 }
 .under-menu a{
   text-decoration: none;
@@ -36,11 +43,9 @@
   color: rgb(69, 69, 69);
 }
 .sub-under-menu{
-  /*position: absolute;*/
   display: flex;
-  /*flex-direction: column;*/
   justify-content: space-around;
   align-items: center;
   width: 80vw;
-  height: 3vw;
+  height: 5vw;
 }

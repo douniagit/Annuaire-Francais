@@ -10,8 +10,8 @@ class Grid extends Component {
     return (
       <div className="grid">
         <div className="grid-wrapper">
-          <Dropdown />
           <Input />
+          <Dropdown />
           <Card />
         </div>
         <div className="button-wrapper">
