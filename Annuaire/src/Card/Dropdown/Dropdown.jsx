@@ -8,6 +8,7 @@ class Dropdown extends Component {
    this.state = { isFormatMouseOver: true };
    this.state = { isAgeMouseOver: true };
    this.state = { isLanguageMouseOver: true };
+   this.state = { isThematicMouseOver: true };
  }
 
  levelMouseOverHandler() {
@@ -34,6 +35,12 @@ class Dropdown extends Component {
  languageMouseOutHandler(){
    this.setState({ isLanguageMouseOver: false });
  }
+ thematicMouseOverHandler() {
+   this.setState({ isThematicMouseOver: true });
+ }
+ thematicMouseOutHandler(){
+   this.setState({ isThematicMouseOver: false });
+ }
   render() {
     return (
       <div className="dropdown">
@@ -42,6 +49,7 @@ class Dropdown extends Component {
           <a href="#" onMouseOver={(e) => this.formatMouseOverHandler(e)} onMouseOut={(e) => this.formatMouseOutHandler(e)} style={{background: (this.state.isFormatMouseOver)? '#c3c1c1': '#dadada'}}>Format</a>
           <a href="#" onMouseOver={(e) => this.ageMouseOverHandler(e)} onMouseOut={(e) => this.ageMouseOutHandler(e)} style={{background: (this.state.isAgeMouseOver)? '#c3c1c1': '#dadada'}}>Age</a>
           <a href="#" onMouseOver={(e) => this.languageMouseOverHandler(e)} onMouseOut={(e) => this.languageMouseOutHandler(e)} style={{background: (this.state.isLanguageMouseOver)? '#c3c1c1': '#dadada'}}>Language</a>
+          <a href="#" onMouseOver={(e) => this.thematicMouseOverHandler(e)} onMouseOut={(e) => this.thematicMouseOutHandler(e)} style={{background: (this.state.isThematicMouseOver)? '#c3c1c1': '#dadada'}}>Thematics</a>
         </div>
         <div className="under-menu">
           <div className="sub-under-menu" onMouseOver={(e) => this.levelMouseOverHandler(e)} onMouseOut={(e) => this.levelMouseOutHandler(e)} style={{display: (this.state.isLevelMouseOver)? 'flex': 'none'}}>
@@ -63,6 +71,12 @@ class Dropdown extends Component {
             <a href="#" className="">Anglais</a>
             <a href="#" className="">Francais</a>
             <a href="#" className="">Japonais</a>
+          </div>
+          <div className="sub-under-menu" onMouseOver={(e) => this.thematicMouseOverHandler(e)} onMouseOut={(e) => this.thematicMouseOutHandler(e)} style={{display: (this.state.isThematicMouseOver)? 'flex': 'none'}}>
+            <a href="#" className="">Politics</a>
+            <a href="#" className="">Art</a>
+            <a href="#" className="">Musique</a>
+            <a href="#" className="">Cinema</a>
           </div>
         </div>
       </div>

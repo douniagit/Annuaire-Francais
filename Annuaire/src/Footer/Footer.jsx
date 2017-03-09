@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Footer.css';
-import logoSimplon from '../../public/assets/logo-simplonco.png'
+import logoSimplon from '../../public/assets/logo-simplonco.png';
+
 
 
 class Footer extends Component {
