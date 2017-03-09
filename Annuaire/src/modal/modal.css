@@ -4,10 +4,12 @@
 }
 .add-ressource{
   margin: 2vw 0 2vw 0;
+  border:2px solid blue;
 }
 .modal{
   position: fixed;
   top: 0;
+  left:0;
   height: 100vh;
   width: 100vw;
   display: none;
@@ -72,13 +74,6 @@
 }
 .button-modal button:focus{
   outline: 0;
-}
-.add-ressource{
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
 }
 .add-ressource-text{
   color: rgb(107, 107, 107);
