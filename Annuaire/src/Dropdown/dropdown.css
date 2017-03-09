@@ -1,12 +1,48 @@
-.Dropdown {
-  width: 100%;
+.dropdown {
+  margin: 0 auto 250px;
+  font-size: 18px;
+  width: 98%;
 }
 
-.Dropdown-list {
+.search-filter {
   background: #dadada;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 54px;
+  margin-bottom: 50px;
+  position: relative;
 }
 
-.Dropdown-list li {
-  float: left;
-  list-style: none
+.search-filter li {
+  list-style: none;
+}
+
+.sub-level-filter, .sub-format-filter, .sub-age-filter, .sub-lang-filter {
+  position: absolute;
+  background: #dadada;
+  padding: 0;
+  top:54px;
+  left: 72px;
+  width: 150px;
+  text-align: center;
+  display: none;
+}
+
+.sub-format-filter {
+  left: 370px;
+}
+
+.sub-age-filter {
+  left: 670px;
+}
+
+.sub-lang-filter {
+  left: 970px;
+}
+
+.level:hover .sub-level-filter, .format:hover .sub-format-filter, .age:hover .sub-age-filter, .lang:hover .sub-lang-filter  {
+  display: block;
 }
