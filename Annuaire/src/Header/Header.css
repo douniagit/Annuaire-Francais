@@ -1,13 +1,22 @@
 .main-header {
   margin: 0 auto;
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .logo{
-  height: 5em;
+
+  height: 10em;
+}
+
+.Header{
+  background-image: url('../../public/assets/car-1077060_960_720.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .Header{
