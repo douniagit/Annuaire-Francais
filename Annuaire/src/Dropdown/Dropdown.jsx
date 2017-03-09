@@ -4,11 +4,11 @@ import './dropdown.css';
 class Dropdown extends Component {
   constructor(props) {
    super(props);
-   this.state = { isLevelMouseOver: true };
-   this.state = { isFormatMouseOver: true };
-   this.state = { isAgeMouseOver: true };
-   this.state = { isLanguageMouseOver: true };
-   this.state = { isThematicMouseOver: true };
+   this.state = { isLevelMouseOver: false };
+   this.state = { isFormatMouseOver: false };
+   this.state = { isAgeMouseOver: false };
+   this.state = { isLanguageMouseOver: false };
+   this.state = { isThematicMouseOver: false };
  }
 
  levelMouseOverHandler() {
