@@ -1,48 +1,54 @@
 .dropdown {
-  margin: 0 auto 250px;
   font-size: 18px;
-  width: 98%;
+  width: 80vw;
+  margin-bottom: 2vw;
+  border-bottom: 0.3vw solid #c3c1c1;
 }
-
 .search-filter {
   background: #dadada;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 0;
-  margin: 10%;
   height: 54px;
   margin-bottom: 50px;
   position: relative;
+  margin: 0;
+  height: 4vw;
 }
-
-.search-filter li {
-  list-style: none;
+.search-filter a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 25%;
+  height: 100%;
 }
-
-.sub-level-filter, .sub-format-filter, .sub-age-filter, .sub-lang-filter {
+.search-filter > a:hover{
+  background: #c3c1c1;
+}
+.under-menu{
   position: absolute;
-  background: #dadada;
-  padding: 0;
-  top:54px;
-  left: 72px;
-  width: 150px;
-  text-align: center;
-  display: none;
-}
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  background: #c3c1c1;
 
-.sub-format-filter {
-  left: 370px;
 }
-
-.sub-age-filter {
-  left: 670px;
+.under-menu a{
+  text-decoration: none;
+  color: white;
+  margin: 0.3vw 0;
 }
-
-.sub-lang-filter {
-  left: 970px;
+.under-menu a:hover{
+  color: rgb(69, 69, 69);
 }
-
-.level:hover .sub-level-filter, .format:hover .sub-format-filter, .age:hover .sub-age-filter, .lang:hover .sub-lang-filter  {
-  display: block;
+.sub-under-menu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  height: 5vw;
 }

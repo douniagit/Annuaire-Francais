@@ -9,10 +9,14 @@ class Grid extends Component {
   render() {
     return (
       <div className="grid">
-        <Dropdown />
-        <Input />
-        <Card />
-        <AddRessource />
+        <div className="grid-wrapper">
+          <Input />
+          <Dropdown />
+          <Card />
+        </div>
+        <div className="button-wrapper">
+          <AddRessource/>
+        </div>
       </div>
     );
   }
