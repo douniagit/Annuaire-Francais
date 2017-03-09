@@ -1,12 +1,9 @@
-.Input {
-  text-align: center;
-  width: 80%;
+.input {
+  justify-content: center;
+  display: flex;
 }
 
 .search-bar {
-  padding-left: 15px;
-  width: 80vw;
-  height: 40px;
-  border: 1px solid #e3e3e3;
-
+  width: 98%;
+  height: 30px;
 }
