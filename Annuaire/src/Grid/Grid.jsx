@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './Grid.css';
-import Dropdown from '../Dropdown/Dropdown.jsx';
-import Input from '../Input/Input.jsx';
 import Card from "../Card/Card.jsx";
-import './grid.css';
+import './Grid.css';
 import Dropdown from '../Dropdown/Dropdown.jsx';
 import Input from '../Input/Input.jsx';
 

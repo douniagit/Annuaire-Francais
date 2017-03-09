@@ -14,10 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header></Header>
-        <Grid />
-        <Dropdown/>
-        <Input/>
-        <Card />
+        <Grid/>
         <AddRessource/>
         <Footer></Footer>
       </div>
