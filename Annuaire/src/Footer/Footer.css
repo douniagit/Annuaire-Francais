@@ -6,7 +6,29 @@
 .logo-simplon {
 display:flex;
 }
+figcaption {
+  margin-left: 28px;
+  margin-top: 4px;
+  color: lightgrey;
+  font-weight: bold;
+}
 #simplon-log {
-  height:45px;
-  width: 100%;
+  margin-left: 28px;
+  margin-top: 40px;
+  height:50px;
+  width: 50px;
+  border-radius: 5px;
+}
+.social-log {
+display:flex;
+justify-content: flex-end;
+margin-right: 20px;
+}
+.fa-facebook-square {
+font-size: 40px;
+margin: 10px;
+}
+.fa-twitter {
+font-size: 40px;
+margin:10px;
 }
