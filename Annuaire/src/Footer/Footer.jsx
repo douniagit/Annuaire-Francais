@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Footer.css';
-import logoSimplon from './Polygonelogo.png'
+import logoSimplon from '../../public/assets/Polygonelogo.png'
 
 class Footer extends Component {
   render() {

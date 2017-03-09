@@ -6,3 +6,7 @@
 .logo-simplon {
 display:flex;
 }
+#simplon-log {
+  height:45px;
+  width: 100%;
+}
