@@ -3,9 +3,8 @@ import './Grid.css';
 import Dropdown from '../Dropdown/Dropdown.jsx';
 import Input from '../Input/Input.jsx';
 import Card from "../Card/Card.jsx";
-import './grid.css';
-import Dropdown from '../Dropdown/Dropdown.jsx';
-import Input from '../Input/Input.jsx';
+
+
 
 class Grid extends Component {
   render() {
