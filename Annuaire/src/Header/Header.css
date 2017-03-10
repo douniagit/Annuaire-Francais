@@ -8,7 +8,15 @@
 }
 
 .logo{
+
   height: 10em;
+}
+
+.Header{
+  background-image: url('../../public/assets/car-1077060_960_720.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .Header{

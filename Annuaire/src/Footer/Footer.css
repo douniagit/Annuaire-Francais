@@ -1,34 +1,62 @@
+
 .container-footer {
-  height:170px;
+  height: 175px;
   width: 100%;
   background-color: #B3B3B3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 }
 .logo-simplon {
-display:flex;
+display: flex;
+justify-content: flex-start;
+}
+figure {
+  margin-bottom: 24px;
 }
 figcaption {
   margin-left: 28px;
   margin-top: 4px;
   color: lightgrey;
   font-weight: bold;
+
+  }
+#adresse {
+  margin-left: 28px;
+  margin-top: 4px;
+  color: #708090;
+  font-weight: italic,bold;
+  display: flex;
 }
+
 #simplon-log {
   margin-left: 28px;
   margin-top: 40px;
   height:50px;
   width: 50px;
-  border-radius: 5px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .social-log {
-display:flex;
-justify-content: flex-end;
-margin-right: 20px;
+display: flex;
+justify-content: center;
 }
 .fa-facebook-square {
 font-size: 40px;
 margin: 10px;
+color: #1e2426;
 }
 .fa-twitter {
 font-size: 40px;
 margin:10px;
+color: #1e2426;
+}
+.fa-linkedin {
+  font-size: 40px;
+  margin:10px;
+  color: #1e2426;
 }

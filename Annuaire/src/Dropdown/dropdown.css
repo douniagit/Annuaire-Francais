@@ -1,54 +1,107 @@
 .dropdown {
+
   font-size: 18px;
+
   width: 80vw;
+
   margin-bottom: 2vw;
+
   border-bottom: 0.3vw solid #c3c1c1;
+
 }
+
 .search-filter {
+
   background: #dadada;
+
   display: flex;
+
   justify-content: space-around;
+
   align-items: center;
+
   padding: 0;
+
   height: 54px;
+
   margin-bottom: 50px;
+
   position: relative;
+
   margin: 0;
+
   height: 4vw;
+
 }
+
 .search-filter a{
+
   text-decoration: none;
+
   display: flex;
+
   justify-content: center;
+
   align-items: center;
+
   color: white;
+
   width: 25%;
+
   height: 100%;
+
 }
+
 .search-filter > a:hover{
-  background: #c3c1c1;
-}
-.under-menu{
-  position: absolute;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 80vw;
+
   background: #c3c1c1;
 
 }
-.under-menu a{
-  text-decoration: none;
-  color: white;
-  margin: 0.3vw 0;
-}
-.under-menu a:hover{
-  color: rgb(69, 69, 69);
-}
-.sub-under-menu{
+
+.under-menu{
+
+  position: absolute;
+
   display: flex;
+
   justify-content: space-around;
+
   align-items: center;
+
   width: 80vw;
+
+  background: #c3c1c1;
+
+
+
+}
+
+.under-menu a{
+
+  text-decoration: none;
+
+  color: white;
+
+  margin: 0.3vw 0;
+
+}
+
+.under-menu a:hover{
+
+  color: rgb(69, 69, 69);
+
+}
+
+.sub-under-menu{
+
+  display: flex;
+
+  justify-content: space-around;
+
+  align-items: center;
+
+  width: 80vw;
+
   height: 5vw;
+
 }
