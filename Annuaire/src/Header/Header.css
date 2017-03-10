@@ -5,6 +5,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.scroll-button{
+  padding: 10px;
+  width: 10em;
+  border: none;
+  font-weight: bold;
+  border-radius: 5em;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.scroll-button:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
 }
 
 .logo{
