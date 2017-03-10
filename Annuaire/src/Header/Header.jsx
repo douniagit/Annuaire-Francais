@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Header.css';
-// import Background from '../../public/assets/car-1077060_960_720.jpg';//
 import Logo from '../../public/assets/logo-cocoricourse.png';
 
 class Header extends Component {
@@ -9,6 +8,7 @@ class Header extends Component {
       <div className="Header">
         <div className= "main-header">
           <img className="logo" src={Logo}></img>
+          <button className="scroll-button" type="button">Click to scroll</button>
         </div>
       </div>
 
