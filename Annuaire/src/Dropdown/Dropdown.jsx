@@ -58,9 +58,9 @@ class Dropdown extends Component {
             <a href="#" className="">Advanced</a>
           </div>
           <div className="sub-under-menu" onMouseOver={(e) => this.formatMouseOverHandler(e)} onMouseOut={(e) => this.formatMouseOutHandler(e)} style={{display: (this.state.isFormatMouseOver)? 'flex': 'none'}}>
-            <a href="#" className="">Video</a>
-            <a href="#" className="">Write</a>
-            <a href="#" className="">Game</a>
+            <a href="#" className="video"><i className="fa fa-video-camera" aria-hidden="true"></i>Video</a>
+            <a href="#" className="write"><i className="fa fa-pencil" aria-hidden="true"></i>Write</a>
+            <a href="#" className="game"><i className="fa fa-gamepad" aria-hidden="true"></i>Game</a>
           </div>
           <div className="sub-under-menu" onMouseOver={(e) => this.ageMouseOverHandler(e)} onMouseOut={(e) => this.ageMouseOutHandler(e)} style={{display: (this.state.isAgeMouseOver)? 'flex': 'none'}}>
             <a href="#" className="">7-12</a>
@@ -68,14 +68,14 @@ class Dropdown extends Component {
             <a href="#" className="">18+</a>
           </div>
           <div className="sub-under-menu" onMouseOver={(e) => this.languageMouseOverHandler(e)} onMouseOut={(e) => this.languageMouseOutHandler(e)} style={{display: (this.state.isLanguageMouseOver)? 'flex': 'none'}}>
-            <a href="#" className="">Anglais</a>
-            <a href="#" className="">Francais</a>
-            <a href="#" className="">Japonais</a>
+            <a href="#" className="en">English</a>
+            <a href="#" className="fr">French</a>
+            <a href="#" className="jp">Japanese</a>
           </div>
           <div className="sub-under-menu" onMouseOver={(e) => this.thematicMouseOverHandler(e)} onMouseOut={(e) => this.thematicMouseOutHandler(e)} style={{display: (this.state.isThematicMouseOver)? 'flex': 'none'}}>
             <a href="#" className="">Politics</a>
             <a href="#" className="">Art</a>
-            <a href="#" className="">Musique</a>
+            <a href="#" className="">Music</a>
             <a href="#" className="">Cinema</a>
           </div>
         </div>
