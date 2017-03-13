@@ -4,6 +4,7 @@
   margin-bottom: 2vw;
   border-bottom: 0.3vw solid #c3c1c1;
 }
+
 .search-filter {
   background: #dadada;
   display: flex;
@@ -16,6 +17,7 @@
   margin: 0;
   height: 4vw;
 }
+
 .search-filter a{
   text-decoration: none;
   display: flex;
@@ -25,9 +27,11 @@
   width: 25%;
   height: 100%;
 }
+
 .search-filter > a:hover{
   background: #c3c1c1;
 }
+
 .under-menu{
   position: absolute;
   display: flex;
@@ -35,20 +39,50 @@
   align-items: center;
   width: 80vw;
   background: #c3c1c1;
-
 }
+
 .under-menu a{
   text-decoration: none;
   color: white;
   margin: 0.3vw 0;
 }
+
 .under-menu a:hover{
   color: rgb(69, 69, 69);
 }
+
 .sub-under-menu{
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 80vw;
   height: 5vw;
+}
+
+.fr::before {
+  padding: 0 0 3px 30px;
+  content: ' ';
+  background: url('../../public/assets/icons/france.png') no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.jp::before {
+  padding: 0 0 3px 30px;
+  content: ' ';
+  background: url('../../public/assets/icons/japan.png') no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.en::before {
+  padding: 0 0 3px 30px;
+  content: ' ';
+  background: url('../../public/assets/icons/united-kingdom.png') no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.under-menu .fa {
+  margin-right: 5px;
 }

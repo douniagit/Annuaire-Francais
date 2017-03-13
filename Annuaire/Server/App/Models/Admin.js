@@ -2,9 +2,9 @@ var mongoose=require('mongoose');
 var Schema=mongoose.Schema;
 var bcrypt=require('bcrypt-nodejs');
 
-//ADMIN SCHEMA
+//USER SCHEMA
 //--------------------------------------
-var AdminSchema=new Schema({
+var UserSchema=new Schema({
 	name:String,
 	username:{type:String,required:true,index:{unique:true}},
 	password:{type:String,required:true,select:false}
@@ -13,21 +13,21 @@ var AdminSchema=new Schema({
 //ENCRYPTER LE PASSWORD AVANT SAVING
 //--------------------------------------
 
-AdminSchema.pre('save',function(next){
-	var admin=this;
-	//encrypter le password seulement si le pwd est changé au nouvel admin
-	if(!admin.isModified('password')) return next();
+UserSchema.pre('save',function(next){
+	var user=this;
+	//encrypter le password seulement si le pwd est changé au nouveau user
+	if(!user.isModified('password')) return next();
 	//generation d'encriptage
-	bcrypt.hash(admin.password,null,null,function(err,hash){
+	bcrypt.hash(user.password,null,null,function(err,hash){
 		if(err) return next(err);
 
-		admin.password=hash;
+		user.password=hash;
 		next();
 	});
 });
 //comparer le MDP donné avec celui de la data base
-AdminSchema.methods.comparepassword=function(password){
-	var admin=this;
-	return bcrypt.compareSync(password,admin.password);
+UserSchema.methods.comparepassword=function(password){
+	var user=this;
+	return bcrypt.compareSync(password,user.password);
 };
-module.exports=mongoose.model('Admin',AdminSchema);
+module.exports=mongoose.model('User',UserSchema);
