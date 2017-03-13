@@ -10,6 +10,7 @@ class Header extends Component {
           <img className="logo" src={Logo}></img>
           <button className="scroll-button" type="button">Click to scroll</button>
         </div>
+
       </div>
 
     );
