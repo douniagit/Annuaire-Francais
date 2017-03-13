@@ -2,7 +2,7 @@
   "name": "annuaire-francais",
   "version": "1.0.0",
   "description": "Moteur de recherche pour cours de français gratuit",
-  "main": "index.js",
+  "main": "Annuaire/src/App.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/nitramnoe/Annuaire-Francais/issues"
   },
-  "homepage": "https://github.com/nitramnoe/Annuaire-Francais#readme"
+  "homepage": "https://github.com/nitramnoe/Annuaire-Francais#readme",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }
