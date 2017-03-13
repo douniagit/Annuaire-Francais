@@ -9,6 +9,7 @@
   width: 80vw;
   height: 4vw;
   font-size: 3vw;
+  margin: 0vw 0 0 0;
   border: none;
 }
 .border-anim:before{

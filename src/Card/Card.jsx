@@ -12,16 +12,17 @@ class Card extends React.Component {
           {data.site.map(info =>
           <div className="contentCard">
                 <div className="Card">
-                  <img src="https://s-media-cache-ak0.pinimg.com/originals/e1/11/5a/e1115afea56dcaf0c273a4f3d9fc7f3a.jpg" alt="cocoricoPicture" className="img"/>
+                  <img src={info.images} alt="cocoricoPicture" className="img"/>
                   <div className="text">
                     <div className="title">{info.name}</div>
                     <div className="desc">{info.description}</div>
                   </div>
                   <div className="wrapp">
                     <div className="icones">
-                      <img src="#" alt="A"/>
-                      <img src="#" alt="B"/>
-                      <img src="#" alt="C"/>
+                      <img src="#" alt="langue"/>
+                      <img src="#" alt="niveau"/>
+                      <img src="#" alt="format"/>
+
                     </div>
                   </div>
                 </div>
