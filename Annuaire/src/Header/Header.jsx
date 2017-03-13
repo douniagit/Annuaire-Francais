@@ -8,7 +8,7 @@ class Header extends Component {
       <div className="Header">
         <div className= "main-header">
           <img className="logo" src={Logo}></img>
-          <button className="scroll-button" type="button">Click to scroll</button>
+          <input type="text" className="search-bar" placeholder="Type your query here" />
         </div>
 
       </div>

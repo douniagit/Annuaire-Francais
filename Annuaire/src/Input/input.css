@@ -30,6 +30,10 @@
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
   transform: scaleX(1);
+  width: 30vw;
+  height: 2vw;
+  font-size: 1.5vw;
+  margin: 0vw 0 0 0;
 }
 .search-bar:focus{
   outline: 0;
