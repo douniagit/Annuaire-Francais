@@ -18,7 +18,7 @@
     "react-sticky": "^5.0.5"
   },
   "scripts": {
-    "start": "node src/app.js",
+    "start": "node src/App.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
