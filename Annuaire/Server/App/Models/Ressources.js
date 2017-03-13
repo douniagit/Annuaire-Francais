@@ -6,15 +6,15 @@ var ressources = require('./ressources.json');
 //RESSOURCE SCHEMA
 //--------------------------------------
 var RessourcesSchema=new Schema({
-	name:ressources.ressources.name,
-    description: ressources.description,
-    lien: ressources.lien,
-    images: ressources.images,
-    langues: ressources.langues,
-    niveau: ressources.niveau,
-    ages: ressources.ages,
-    format: ressources.format,
-    keywords:ressources.keywords,
+	name:String,
+    description: String,
+    lien: String,
+    images: String,
+    langues: [String],
+    niveau: [String],
+    ages: [Number],
+    format: [String],
+    keywords:[String],
 });
 
 
