@@ -33,7 +33,7 @@ app.use(morgan('dev'));
 //ROUTES POUR LES API
 //------------------------------------------------
 app.get('/',function(req,res){
-	res.send("coucou!!!!");
+	res.send("hello Annuaire");
 })
 //DEFINITION DES ROUTES
 //------------------------------------------------
@@ -107,4 +107,4 @@ app.use('/api',apiRouter);
 //SERVER START
 //------------------------------------------------
 app.listen(port);
-console.log("la magie c ici:" + port)
+console.log("Annuaire linguistique :" + port)
