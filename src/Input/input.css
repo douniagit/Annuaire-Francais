@@ -1,13 +1,36 @@
 .input {
   justify-content: center;
   display: flex;
+  position: relative;
+  background-color: white;
+  padding: 1vw 0 1vw 0;
 }
-
 .search-bar {
   width: 80vw;
   height: 4vw;
   font-size: 3vw;
   margin: 0vw 0 0 0;
+  border: none;
+}
+.border-anim:before{
+  content: '';
+	position: absolute;
+	bottom: 0px;
+  height: 0px;
+	width: 100%;
+  background-color: #b8b4b4;
+	border-bottom: 2px solid #b8b4b4;
+  display: flex;;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+}
+.border-anim:hover:before{
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
 }
 .search-bar:focus{
   outline: 0;

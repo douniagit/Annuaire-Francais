@@ -22,6 +22,7 @@ class Card extends React.Component {
                       <img src="#" alt="langue"/>
                       <img src="#" alt="niveau"/>
                       <img src="#" alt="format"/>
+
                     </div>
                   </div>
                 </div>

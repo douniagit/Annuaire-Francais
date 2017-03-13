@@ -13,8 +13,8 @@ class Grid extends Component {
         <div className="grid-wrapper">
         <Sticky>
           <Input />
-            <Dropdown />
-          </Sticky>
+          <Dropdown />
+        </Sticky>
           <Card />
         </div>
         <div className="button-wrapper">

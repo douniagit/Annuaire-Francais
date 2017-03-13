@@ -7,6 +7,7 @@ var ressources = {
               'images':'https://www.duolingo.com/images/illustrations/owl-happy@2x.png',
               'langues':['French','Spanish','English','Czech','Portuguese','Hindi','Polish','Ukrainian','Arabic','Persian','Bulgarian','Swedish','Afrikaans','Norwegian','Hungarian','Dutch','Hebrew','Chinese','Croatian','Korean','Vietnamese','Indonesian','Turkish',
             'Finnish','Romanian','Greek','Danish','Japanese','Russian','Italian','German','Punjabi','Polish','Tagalog','Bengali','Thai','Tamil','Telugu'],
+
               'niveau':[],
               'ages':[],
               'format':[],
