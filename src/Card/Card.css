@@ -61,3 +61,21 @@
   text-align: left;
   border-bottom:2px solid #dadada;
 }
+.button-card{
+ padding: 1vw 3vw;
+ border: none;
+ font-size: 1.5vw;
+ color: white;
+ background: rgb(126, 126, 126);
+ transition: background 0.5s, color 0.5s;
+ cursor: pointer;
+ box-shadow: 0 0 2px rgba(110, 110, 110, 0.67);
+}
+.button-card:hover{
+ background-color: rgb(206, 206, 206);
+ color: white;
+ outline: 0;
+}
+.button-card:focus{
+ outline: 0;
+}
