@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Logo from './logo.png';
+import Logo2 from './logo.png';
 
 import './Header.css'
 
@@ -8,7 +8,7 @@ class Header extends Component {
     return (
       <div className="header">
               <div className="header">
-                <img className="logo" src={Logo}></img>
+                <img className="logo2" src={Logo2}></img>
                 <div className="button-container">
                   <a className="button button3" href="#popup1">Login</a>
                   <button className="button3">Log out</button>
