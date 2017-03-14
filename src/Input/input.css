@@ -1,9 +1,6 @@
 .input {
   justify-content: center;
   display: flex;
-  position: relative;
-  background-color: white;
-  padding: 1vw 0 1vw 0;
 }
 .search-bar {
   width: 80vw;

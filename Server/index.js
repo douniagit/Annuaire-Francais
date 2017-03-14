@@ -89,8 +89,8 @@ apiRouter.route('/user/:user_id')
 
 				res.json({message:"User est mis à jour"});
 			});
-	});	
-	})		
+	});
+	})
 	.delete(function(req,res){
 		User.remove({
 		_id:req.params.user_id

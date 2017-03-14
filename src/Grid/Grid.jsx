@@ -14,7 +14,7 @@ class Grid extends Component {
         <Sticky>
           <Input />
           <Dropdown />
-        </Sticky>
+          </Sticky>
           <Card />
         </div>
         <div className="button-wrapper">

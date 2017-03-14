@@ -8,6 +8,11 @@
   flex-direction: column;
 }
 
+
+.logo{
+  height: 10vw;
+}
+
 .scroll-button{
   padding: 10px;
   width: 10em;
@@ -23,9 +28,6 @@
   color: black;
 }
 
-.logo{
-  height: 10vw;;
-}
 
 .Header{
   background-image: url('../../public/assets/car-1077060_960_720.jpg');
