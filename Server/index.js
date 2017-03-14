@@ -100,6 +100,9 @@ apiRouter.route('/user/:user_id')
 		});
 	});
 
+	//SERVIR FICHIERS STATIQUES
+	app.use(express.static(__dirname + '../public'));
+
 
 //PREFIXE PUR LES ROUTES
 //------------------------------------------------
