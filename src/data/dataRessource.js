@@ -41,7 +41,7 @@ var ressources = {
               'name':'Le point du FLE',
               'description':'Site for Learning and Teaching French',
               'lien':'http://www.lepointdufle.net/p/apprendre_le_francais.htm',
-              'images':'https://pbs.twimg.com/profile_images/1881545330/lpdf_fbk-nveau_400x400.gif',
+              'images':'https://pbs.twimg.com/profile_images/839829594664480768/bf2uSbge.jpg',
               'langues':['French'],
               'niveau':['Beginner','Medium','Confirmed'],
               'ages':['Teenagers','Adults'],
