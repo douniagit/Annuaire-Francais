@@ -1,13 +1,15 @@
 .input {
   justify-content: center;
   display: flex;
+  position: relative;
 }
 .search-bar {
-  width: 80vw;
-  height: 4vw;
+  width: calc(80vw - 15px);
+  height: 70px;
   font-size: 3vw;
-  margin: 0vw 0 0 0;
+  margin: 0;
   border: none;
+  padding-left: 15px;
 }
 .border-anim:before{
   content: '';
@@ -17,7 +19,7 @@
 	width: 100%;
   background-color: #b8b4b4;
 	border-bottom: 2px solid #b8b4b4;
-  display: flex;;
+  display: flex;
   -webkit-transform: scaleX(0);
   -ms-transform: scaleX(0);
   transform: scaleX(0);
