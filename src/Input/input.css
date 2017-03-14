@@ -1,23 +1,26 @@
 .input {
   justify-content: center;
   display: flex;
+  position: relative;
 }
 .search-bar {
   width: 80vw;
-  height: 4vw;
+  height: 70px;
   font-size: 3vw;
   margin: 0;
   border: none;
+  border-radius: 5px;
+  padding-left: 15px;
 }
 .border-anim:before{
   content: '';
-	/*position: absolute;*/
+	position: absolute;
 	bottom: 0px;
   height: 0px;
 	width: 100%;
   background-color: #b8b4b4;
 	border-bottom: 2px solid #b8b4b4;
-  display: flex;;
+  display: flex;
   -webkit-transform: scaleX(0);
   -ms-transform: scaleX(0);
   transform: scaleX(0);

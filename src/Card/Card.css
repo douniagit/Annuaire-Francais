@@ -6,6 +6,11 @@
   height: auto;
   background-color:lightgrey;
 }
+.cardContainer h4{
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
 .Card {
   width: 244px;
   height: 339px;

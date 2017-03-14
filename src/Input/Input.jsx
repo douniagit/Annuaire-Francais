@@ -5,10 +5,9 @@ class Input extends Component {
   render() {
     return (
       <div className="input">
-      <span className="border-anim">
+        <span className="border-anim">
           <input type="text" className="search-bar" placeholder="Type your query here" />
         </span>
-
       </div>
     );
   }
