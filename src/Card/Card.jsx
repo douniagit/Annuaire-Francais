@@ -16,6 +16,7 @@ class Card extends React.Component {
                   <div className="text">
                     <div className="title">{info.name}</div>
                     <div className="desc">{info.description}</div>
+                    <a href ={info.lien} className="button-card"></a>
                   </div>
                   <div className="wrapp">
                     <div className="icones">
