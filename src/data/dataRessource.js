@@ -184,7 +184,7 @@ var ressources = {
             {
               'id':"15",
               'name':'Frantastique',
-              'description':'site et application pour apprendre le français',
+              'description':'Site and application available on IOS and Android',
               'lien':'https://www.frantastique.com/fr',
               'images':'http://www.eyepreferparis.com/.a/6a00d83451b0bd69e201bb092277b8970d-pi',
               'langues':['French','English','Deutsch','Italian','Portuguese','Svenska','Nederlands','Hebrew','Russian','Arabic','Chinese','Japanese'],
@@ -196,7 +196,7 @@ var ressources = {
             {
               'id':"16",
               'name':'Mondly',
-              'description':'site et application pour apprendre le français',
+              'description':'Site and application available on IOS and Android',
               'lien':'https://www.mondlylanguages.com/',
               'images':'https://lh3.googleusercontent.com/14037RbzbMHOZlmMczxG5s-_CN6KmUqh7fObaJ0tRiK6zzCkIiyV_dcyMUNMBPQW-g=w300',
               'langues':['French','English','Spanish','Czech','Portuguese','Hindi','Polish','Ukrainian','Arabic','Persian','Bulgarian','Swedish','Afrikaans','Norwegian','Hungarian','Dutch','Hebrew','Chinese','Croatian','Korean','Vietnamese','Indonesian','Turkish',
@@ -209,7 +209,7 @@ var ressources = {
             {
               'id':"17",
               'name':'Learn & play',
-              'description':'application for IOS and Google play',
+              'description':'Site and application available on IOS and Android',
               'lien':'https://play.google.com/store/apps/details?id=free.langame_fr.rivex',
               'images':'http://1.bp.blogspot.com/-zbVC-FWG9J0/USLwqhloW6I/AAAAAAAADxs/HQVsgQ6x5Y0/s1600/Screen+Shot+2013-02-18+at+10.25.10+PM.png',
               'langues':['French','English'],
