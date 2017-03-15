@@ -41,6 +41,7 @@ class Dropdown extends Component {
  thematicMouseOutHandler(){
    this.setState({ isThematicMouseOver: false });
  }
+
   render() {
     return (
       <div className="dropdown">
@@ -83,5 +84,6 @@ class Dropdown extends Component {
     );
   }
 }
+
 
 export default Dropdown;
