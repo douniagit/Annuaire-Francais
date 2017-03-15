@@ -40,15 +40,15 @@ body {
   border: 2px solid black;
 }
 
-.dropdown {
+.dropdown2 {
     position: relative;
 }
 
-.dropdown a {
+.dropdown2 a {
     text-decoration: none;
 }
 
-.dropdown [data-toggle="dropdown"] {
+.dropdown2 [data-toggle="dropdown2"] {
     display: block;
     color: white;
     background: #f44336;
@@ -59,11 +59,11 @@ body {
     padding: 10px;
 }
 
-.dropdown [data-toggle="dropdown"]:hover {
+.dropdown2 [data-toggle="dropdown2"]:hover {
     background: #cd3d2e;
 }
 
-.dropdown [data-toggle="dropdown"]:before {
+.dropdown2 [data-toggle="dropdown2"]:before {
     position: absolute;
     display: block;
     content: '\25BC';
@@ -81,7 +81,7 @@ body {
     transition: transform 0.6s;
 }
 
-.dropdown > .dropdown-menu {
+.dropdown2 > .dropdown2-menu {
     max-height: 0;
     overflow: hidden;
     list-style: none;
@@ -104,11 +104,11 @@ body {
     -webkit-animation: hideAnimation 0.4s ease-out;
 }
 
-.dropdown > .dropdown-menu li {
+.dropdown2 > .dropdown2-menu li {
     padding: 0;
 }
 
-.dropdown > .dropdown-menu li a {
+.dropdown2 > .dropdown2-menu li a {
     display: block;
     color: #6f6f6f;
     background: #EEE;
@@ -119,11 +119,11 @@ body {
     padding: 10px 10px;
 }
 
-.dropdown > .dropdown-menu li a:hover {
+.dropdown2 > .dropdown2-menu li a:hover {
     background: #f6f6f6;
 }
 
-.dropdown > input[type="checkbox"] {
+.dropdown2 > input[type="checkbox"] {
     opacity: 0;
     display: block;
     position: absolute;
@@ -133,7 +133,7 @@ body {
     cursor: pointer;
 }
 
-.dropdown > input[type="checkbox"]:checked ~ .dropdown-menu {
+.dropdown2 > input[type="checkbox"]:checked ~ .dropdown2-menu {
     max-height: 9999px;
     display: block;
     -moz-transform: scaleY(1);
@@ -149,7 +149,7 @@ body {
     transition: max-height 2s ease-in-out;
 }
 
-.dropdown > input[type="checkbox"]:checked + a[data-toggle="dropdown"]:before {
+.dropdown2 > input[type="checkbox"]:checked + a[data-toggle="dropdown2"]:before {
     -moz-transform: rotate(-180deg);
     -ms-transform: rotate(-180deg);
     -webkit-transform: rotate(-180deg);
