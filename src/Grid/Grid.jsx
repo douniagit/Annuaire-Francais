@@ -10,10 +10,11 @@ class Grid extends Component {
   render() {
     return (
       <div className="grid">
-        <div className="grid-wrapper">
-          <Sticky stickyClassName="stickyDropDown" topOffset={-74} >
+       <Sticky className="x" stickyClassName="stickyDropDown" topOffset={-74} >
             <Dropdown />
-          </Sticky>
+         </Sticky>
+         
+        <div className="grid-wrapper">
           <Card />
         </div>
         <div className="button-wrapper">

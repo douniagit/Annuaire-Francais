@@ -10,11 +10,10 @@ class Header extends Component {
       <div className="Header">
         <div className= "main-header">
           <img className="logo" src={Logo}></img>
-              <Sticky>
-                <Input/>
-              </Sticky>
+            <Sticky className="y">
+              <Input/>
+            </Sticky>
         </div>
-
       </div>
 
     );

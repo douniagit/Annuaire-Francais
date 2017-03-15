@@ -10,7 +10,6 @@ class Dropdown extends Component {
    this.state = { isLanguageMouseOver: false };
    this.state = { isThematicMouseOver: false };
  }
-
  levelMouseOverHandler() {
    this.setState({ isLevelMouseOver: true });
  }
