@@ -89,8 +89,8 @@ apiRouter.route('/admin/:user_id')
 
 				res.json({message:"User est mis à jour"});
 			});
-	});	
-	})		
+	});
+	})
 	.delete(function(req,res){
 		User.remove({
 		_id:req.params.user_id
@@ -99,6 +99,9 @@ apiRouter.route('/admin/:user_id')
 		res.json({message:"supprimé"});
 		});
 	});
+
+	//SERVIR FICHIERS STATIQUES
+	app.use(express.static(__dirname + '../public'));
 
 
 //PREFIXE POUR LES ROUTES

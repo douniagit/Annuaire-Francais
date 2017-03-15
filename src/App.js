@@ -14,7 +14,6 @@ class App extends Component {
           <Grid/>
           <Footer></Footer>
         </StickyContainer>
-
       </div>
     );
   }

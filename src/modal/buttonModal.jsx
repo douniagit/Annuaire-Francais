@@ -29,8 +29,9 @@ class AddRessource extends Component {
                 <label htmlFor="lien">Yout link to add</label>
                 <textarea name="lien" placeholder="http://www.mylink.com" id="lien-ajout" cols="15" rows="3"></textarea>
                 <div className="button-modal">
-                  <button className="submit" onClick={(e) => this.onClickHandlerCancel(e)}>Submit</button>
-                  <button className="cancel" onClick={(e) => this.onClickHandlerCancel(e)}>Cancel</button>
+                  <button type="button" className="submit" onClick={(e) => this.onClickHandlerCancel(e)}>Submit</button>
+                  <button type="button" className="cancel" onClick={(e) => this.onClickHandlerCancel(e)}>Cancel</button>
+
                 </div>
               </form>
             </div>
