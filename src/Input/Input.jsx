@@ -1,31 +1,42 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './input.css';
 import data from '../data/dataRessource.js';
 var Select = require('react-select');
 import 'react-select/dist/react-select.css';
 
-
 let options = [];
-data.site.map(info => info.keywords.forEach(e =>
-  if (options.indexOf({value: e, label: e}) == -1){
-    options.push({value: e, label: e});
-  }
-  ));
+data.site.forEach((info) => {
+    info.keywords.forEach((e) => {
+        options.push(e);
+    })
+});
+options = options.filter( (el, i, arr) => { return arr.indexOf(el) === i; } );
+options = options.map( (e) => { return {value: e, label: e}} );
 console.log(options);
 
-
-class Input extends Component {
-  render() {
-    return (
-      <div className="input">
+var Input = React.createClass({
+	displayName: 'MultiSelectField',
+	propTypes: {
+		label: React.PropTypes.string,
+	},
+	getInitialState () {
+		return {
+			options: options,
+			value: [],
+		};
+	},
+	handleSelectChange (value) {
+		console.log('You\'ve selected:', value);
+		this.setState({ value });
+	},
+	render () {
+		return (
+			<div className="input">
         <span className="border-anim">
-         <input type="text" className="search-bar" name="search-input" onKeyPress={this.keyPressHandler} placeholder="Type your query here" />
-          <Select.Async name="form-field-name" multi={true}/>
+          <Select className="search-bar" multi simpleValue disabled={this.state.disabled} value={this.state.value} placeholder="Select your favourite(s)" options={this.state.options} onChange={this.handleSelectChange} />
         </span>
-
-      </div>
-    );
-  }
-}
-
-export default Input;
+			</div>
+		);
+	}
+});
+module.exports = Input;
