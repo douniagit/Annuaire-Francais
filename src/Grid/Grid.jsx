@@ -11,7 +11,7 @@ class Grid extends Component {
     return (
       <div className="grid">
         <div className="grid-wrapper">
-          <Sticky stickyClassName="stickyDropDown" topOffset={-70} >
+          <Sticky stickyClassName="stickyDropDown" topOffset={-74} >
             <Dropdown />
           </Sticky>
           <Card />
