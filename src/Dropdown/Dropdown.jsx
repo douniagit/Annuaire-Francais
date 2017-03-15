@@ -53,7 +53,7 @@ class Dropdown extends Component {
         </div>
         <div className="under-menu">
           <div className="sub-under-menu" onMouseOver={(e) => this.levelMouseOverHandler(e)} onMouseOut={(e) => this.levelMouseOutHandler(e)} style={{display: (this.state.isLevelMouseOver)? 'flex': 'none'}}>
-            <a  className="">Beginner</a>
+            <a className="">Beginner</a>
             <a  className="">Intermediate</a>
             <a  className="">Advanced</a>
           </div>
