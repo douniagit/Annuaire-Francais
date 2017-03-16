@@ -4,9 +4,9 @@
 const users = require('./controllers/users');
 const ressources= require('./controllers/ressources');
 const bodyParser=require('body-parser');
+const {Router} = require('express');
 
-
-const apiRoutes=new Router();
+const apiRoutes = new Router();
 // pour définir les routes
 
 apiRoutes.use(bodyParser.urlencoded({extended:false}));
@@ -15,7 +15,7 @@ apiRoutes.use(bodyParser.json());
 
 //------------------users--------------------
 
-apiRoutes.post('/users', function (req,res){ //ou .get?
+apiRoutes.post('/users', function (req,res) { //ou .get?
 	//methode de controller
 	api.users.create(req,res);
 });
@@ -26,12 +26,12 @@ apiRoutes.get('/users', function (req,res){
 });
 
 apiRoutes.put('/users', function (req,res){
-	
+
 	api.users.update(req,res);
 });
 
 apiRoutes.delete('/users', function (req,res){
-	
+
 	api.users.delete(req,res);
 });
 
@@ -65,5 +65,8 @@ apiRoutes.delete('/ressources', function (req,res){
 
 module.exports={
 	users:users,
-	ressources:ressources
+	ressources:ressources,
+	apiRoutes:apiRoutes
 };
+
+// module.exports = apiRoutes;

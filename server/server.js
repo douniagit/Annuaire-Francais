@@ -1,7 +1,7 @@
 //notre serveur http
-const express= require('express');
-const app= express();
-const routes=require("./routes.js");
+const express = require('express');
+const app = express();
+const routes = require("./routes.js");
 
 
 app.use( function(request, response, next) {

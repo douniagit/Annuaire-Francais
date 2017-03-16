@@ -15,15 +15,15 @@ mongoose.connection.on('disconnected',function(){
 	console.log('MongoDB connection disconnected')
 });
 
-process.on('SIGINT',function{
+process.on('SIGINT', function() {
 	mongoose.connection.close(function(){
 		console.log('Server process terminated. closing Mlab')
 		process.exit(0);
 	});
 });
 
-const db={
-	users:mongoose.model('Users',users)
+const db = {
+	users:mongoose.model('Users', users),
 	ressources:mongoose.model('Ressources',ressources)
 }
 

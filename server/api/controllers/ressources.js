@@ -23,25 +23,25 @@ const ressources={
 		.catch(err=>{
 			res.status(500).send("operation failed"+ err)
 		})
-	}
-	findById:function(req,res){
-		db.ressources.findById({req.params.id}) //({id:req.params})
+	},
+	findById: function(req,res){
+		db.ressources.findById(req.params.id) //({id:req.params})
 		.then(data=>{
 			res.status(200).send(data);
 		})
 		.catch(err=>{
 			res.status(500).send("operation failed"+ err)
 		})
-	}
+	},
 	findByKeywords:function(req,res){
-		db.ressources.findByKeywords({req.params.keywords})//({keywords:req.params})
+		db.ressources.findByKeywords(req.params.keywords)//({keywords:req.params})
 		.then(data=>{
 			res.status(200).send(data);
 		})
 		.catch(err=>{
 			res.status(500).send("operation failed"+ err)
 		})
-	}
+	},
 	update: (req,res)=>{
 		db.ressources.update({name:req.params})
 		.then(data=>{
@@ -60,7 +60,7 @@ const ressources={
 			res.status(500).send("operation failed"+ err)
 		})
 	}
-	
+
 }
 
 module.exports=ressources;
