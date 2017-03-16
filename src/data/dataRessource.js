@@ -378,7 +378,7 @@ var ressources = {
             "name": "Busuu",
             "description": "Site and application available on IOS and Android",
             "lien": "https://www.busuu.com/fr/a/a/apprendre-francais-en-ligne",
-            "images": "https://lh3.googleusercontent.com/HYatgtvcl4yS1hrivxt5bpWVgU6gJsbNOYK-B3fTfakaQxhhcDgZUs2-sLHZDlUQedU=h556",
+            "images": "https://lh6.ggpht.com/qSe6ztuo_8syDMBwYr6jcZtnX8CBBYX7fjUUr8wdJNqHYDpB6gjJh5Znsw96A6tX2-w=w300",
             "langues": [
                 "French",
                 "Spanish",
@@ -698,7 +698,7 @@ var ressources = {
             "name": "Mondly",
             "description": "Site and application available on IOS and Android",
             "lien": "https://www.mondlylanguages.com/",
-            "images": "https://lh3.googleusercontent.com/14037RbzbMHOZlmMczxG5s-_CN6KmUqh7fObaJ0tRiK6zzCkIiyV_dcyMUNMBPQW-g =w300",
+            "images": "http://www.sandratwp.com/wp-content/uploads/2016/05/logo-mondly-orange.png",
             "langues": [
                 "French",
                 "English",
