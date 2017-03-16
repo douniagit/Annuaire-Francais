@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const users=require('./models/users');
 const ressources=require('./models/ressources');
 
-mongoose.connect('mongodb://admin:1234@ds129050.mlab.com:29050/test-db'); //mettre l'url de mlab
+mongoose.connect('mongodb://localhost:27017/test-db'); //mettre l'url de mlab
 mongoose.connection.on('error',err=>{
 	console.log('ERROR close MongoDB process',err)});
 

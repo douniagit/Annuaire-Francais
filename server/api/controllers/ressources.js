@@ -6,7 +6,7 @@ const db=require('../../database');
 
 const ressources={
 	create: (req,res)=>{
-		var newRessource= new db.ressources(req.body);
+		let newRessource= new db.ressources(req.body);
 		newRessource.save()
 		.then(data =>{
 			res.status(200).send('donnee ajoutee: \n' +data)
@@ -16,7 +16,8 @@ const ressources={
 		});
 	},
 	find:function(req,res){
-		db.ressources.find({name:req.params})
+		console.log('Bonjour je suis le find de ressource.');
+		newRessource.find({name:req.params.id})
 		.then(data=>{
 			res.status(200).send(data);
 		})
