@@ -27,6 +27,6 @@ const db={
 	ressources:mongoose.model('Ressources',ressources)
 }
 
-// db.users db.ressources db.products
+// db.users db.ressources
 module.exports=db;
 

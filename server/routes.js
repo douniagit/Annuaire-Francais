@@ -9,7 +9,7 @@ const routes=new Router();
 routes.use('/api', api)
 
 routes.use(express.static(__dirname +'../public'));
-
+routes.use(express.static(__dirname+'../public/admin'))
 
 module.exports=routes;
 

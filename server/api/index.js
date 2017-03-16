@@ -15,7 +15,7 @@ apiRoutes.use(bodyParser.json());
 
 //------------------users--------------------
 
-apiRoutes.get('/users', function (req,res){
+apiRoutes.post('/users', function (req,res){ //ou .get?
 	//methode de controller
 	api.users.create(req,res);
 });
@@ -25,15 +25,20 @@ apiRoutes.get('/users', function (req,res){
 	api.users.find(req,res);
 });
 
-apiRoutes.post('/users', function (req,res){
+apiRoutes.put('/users', function (req,res){
 	
 	api.users.update(req,res);
+});
+
+apiRoutes.delete('/users', function (req,res){
+	
+	api.users.delete(req,res);
 });
 
 
 //------------------Ressources--------------------
 
-apiRoutes.get('/ressources', function (req,res){
+apiRoutes.post('/ressources', function (req,res){ //ou .get?
 	//methode de controller
 	api.ressources.create(req,res);
 });
@@ -43,12 +48,12 @@ apiRoutes.get('/ressources', function (req,res){
 	api.ressources.find(req,res);
 });
 
-apiRoutes.post('/ressources', function (req,res){
+apiRoutes.put('/ressources', function (req,res){
 	//methode de controller
 	api.ressources.update(req,res);
 });
 
-apiRoutes.put('/ressources', function (req,res){
+apiRoutes.post('/ressources', function (req,res){
 	//methode de controller
 	api.ressources.add(req,res);
 });

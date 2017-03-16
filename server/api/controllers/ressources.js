@@ -52,7 +52,7 @@ const ressources={
 		})
 	},
 	delete: (req,res)=>{
-		db.ressources.delte({name:req.params})
+		db.ressources.delete({name:req.params})
 		.then(data=>{
 			res.status(200).send(data);
 		})
