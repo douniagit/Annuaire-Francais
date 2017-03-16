@@ -94,6 +94,7 @@
   transition: background 0.5s, color 0.5s;
   cursor: pointer;
   box-shadow: 0 0 2px rgba(110, 110, 110, 0.67);
+  border-radius: 5vw;
 }
 .add-ressource-button:hover{
   background-color: rgb(206, 206, 206);
