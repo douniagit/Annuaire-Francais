@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Selection from '../../Interface/Selection/Selection.jsx';
-import Header from '../../Interface/Header/Header.jsx';
+import Selection from '../Components/InterfaceComponents/Selection/Selection.jsx'
+import Header from '../Components/InterfaceComponents/Header/Header.jsx'
 
 import './Boutton.css'
 
