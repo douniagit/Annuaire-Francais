@@ -2,6 +2,7 @@
   justify-content: center;
   display: flex;
   position: relative;
+
 }
 .search-bar {
   width: calc(80vw - 19px);
@@ -10,6 +11,7 @@
   margin: 0;
   /*border: 2px solid #D3D3D3;*/
   /*padding-left: 15px;*/
+
 }
 .border-anim:before{
 
