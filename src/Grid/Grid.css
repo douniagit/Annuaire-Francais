@@ -6,17 +6,20 @@
   clear: both;
 }
 .body {
-  background-color: #f1f1f1
+  background-color: #f1f1f1;
 }
 
 .stickyDropDown{
   margin-top: 36px;
+
 }
 
 .grid {
-width: 80%;
+  width: 80%;
   margin: 0 auto;
   width: 100%;
+  background-color: lightgrey;
+
 }
 .grid-wrapper{
   margin: auto;
@@ -28,4 +31,3 @@ width: 80%;
 	flex-direction: row;
 	justify-content: center;
 }
-

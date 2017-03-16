@@ -17,6 +17,7 @@
   position: relative;
   margin: 0;
   height: 4vw;
+  background-color: #dadada;
 }
 
 .search-filter a{
@@ -31,6 +32,7 @@
 
 .search-filter > a:hover{
   background: #c3c1c1;
+  font-weight: bold;
 }
 
 .under-menu{
@@ -49,7 +51,7 @@
 }
 
 .under-menu a:hover{
-  color: rgb(69, 69, 69);
+  font-weight: bold;
 }
 
 .sub-under-menu{
@@ -58,6 +60,7 @@
   align-items: center;
   width: 80vw;
   height: 5vw;
+  background-color: #c3c1c1;
 }
 .sub-under-menu a{
   cursor: pointer;

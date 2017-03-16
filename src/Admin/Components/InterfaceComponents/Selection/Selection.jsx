@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Header from '../Header/Header.jsx';
 
 import './Selection.css'
 
@@ -7,7 +7,6 @@ class Selection extends Component {
   render() {
     return (
       <div className="selection">
-
       <div className="container-dd">
         <div className="container-d">
              <ul>
@@ -24,8 +23,9 @@ class Selection extends Component {
                  <input type="checkbox" />
                  <a className="al" href="#" data-toggle="dropdown2">MODIFIER DATA</a>
                  <ul className="dropdown2-menu">
-                   <li><a href="#">//////</a></li>
-                   <li><a href="#">/////</a></li>
+                   <li><a href="#">UPLOAD</a></li>
+                   <li><a href="#">EDIT</a></li>
+                   <li><a href="#">REMOVE</a></li>
                  </ul>
                </li>
                <li className="dropdown2">
