@@ -4,13 +4,19 @@
   justify-content: space-around;
   width: 100%;
   height: auto;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #C3C1C1;
 }
+
+h4{
+  padding: 3vw;
+}
+
 .cardContainer h4{
   height: auto;
   width: 100%;
   text-align: center;
 }
+
 .Card {
   width: 244px;
   height: 400px;
