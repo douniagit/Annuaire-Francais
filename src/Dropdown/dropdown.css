@@ -1,6 +1,7 @@
 .dropdown {
   font-size: 18px;
   width: 80vw;
+  margin:auto;
   margin-bottom: 2vw;
   border-bottom: 0.3vw solid #c3c1c1;
 }

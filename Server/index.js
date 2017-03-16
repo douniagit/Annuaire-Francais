@@ -33,7 +33,7 @@ app.use(morgan('dev'));
 //ROUTES POUR LES API
 //------------------------------------------------
 app.get('/',function(req,res){
-	res.send("hello Annuaire");
+	res.send("hello HomePage");
 })
 //DEFINITION DES ROUTES
 //------------------------------------------------
@@ -43,7 +43,7 @@ apiRouter.get('/',function(req,res){
 	res.join({message:"on est sur une API"});
 });
 
-apiRouter.route('/user')
+apiRouter.route('/admin')
 	.post(function(req,res){
 		var user= new User();
 
@@ -68,7 +68,7 @@ apiRouter.route('/user')
 	});
 });
 
-apiRouter.route('/user/:user_id')
+apiRouter.route('/admin/:user_id')
 	.get(function(req,res){
 		User.findById(req.params.user_id,function(err,user){
 			if(err) res.send(err);
@@ -104,7 +104,7 @@ apiRouter.route('/user/:user_id')
 	app.use(express.static(__dirname + '../public'));
 
 
-//PREFIXE PUR LES ROUTES
+//PREFIXE POUR LES ROUTES
 //------------------------------------------------
 app.use('/api',apiRouter);
 //SERVER START
