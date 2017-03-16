@@ -1,12 +1,12 @@
 'use strict';
 
-const {Router} = require('express');
+const express = require('express');
 const api = require('./api');
 
 
-const routes=new Router();
+const routes=new express();
 //routes app.get app.all 
-routes.use('/api', api);
+routes.use('/', api);
 
 routes.use(express.static(__dirname +'../public'));
 

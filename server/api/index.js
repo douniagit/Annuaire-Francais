@@ -5,7 +5,8 @@ const users = require('./controllers/users');
 const ressources= require('./controllers/ressources');
 const suggestions= require('./controllers/suggestions');
 const bodyParser=require('body-parser');
-
+const {Router} =require('express');
+const db=require('../database');
 
 const apiRoutes=new Router();
 // pour définir les routes
@@ -18,22 +19,22 @@ apiRoutes.use(bodyParser.json());
 
 apiRoutes.post('/users', function (req,res){ //ou .get?
 	//methode de controller
-	api.users.create(req,res);
+	db.users.create(req,res);
 });
 
 apiRoutes.get('/users', function (req,res){
 	//methode de controller
-	api.users.find(req,res);
+	db.users.find(req,res);
 });
 
 apiRoutes.put('/users', function (req,res){
 	
-	api.users.update(req,res);
+	db.users.update(req,res);
 });
 
 apiRoutes.delete('/users', function (req,res){
 	
-	api.users.delete(req,res);
+	db.users.delete(req,res);
 });
 
 
@@ -41,44 +42,46 @@ apiRoutes.delete('/users', function (req,res){
 
 apiRoutes.post('/ressources', function (req,res){ //ou .get?
 	//methode de controller
-	api.ressources.create(req,res);
+	db.ressources.create(req,res);
 });
 
 apiRoutes.get('/ressources', function (req,res){
 	//methode de controller
-	api.ressources.find(req,res);
+	db.ressources.find(req,res);
 });
 
 apiRoutes.put('/ressources', function (req,res){
 	//methode de controller
-	api.ressources.update(req,res);
+	db.ressources.update(req,res);
 });
 
 apiRoutes.post('/ressources', function (req,res){
 	//methode de controller
-	api.ressources.add(req,res);
+	db.ressources.add(req,res);
 });
 
 apiRoutes.delete('/ressources', function (req,res){
 	//methode de controller
-	api.ressources.delete(req,res);
+	db.ressources.delete(req,res);
 });
 //----------------Suggestions--------------
 
 apiRoutes.post('/suggestions', function (req,res){ //ou .get?
 	//methode de controller
-	api.suggestions.create(req,res);
+	db.suggestions.create(req,res);
 });
 
 apiRoutes.delete('/suggestions', function (req,res){
 	//methode de controller
-	api.suggestions.delete(req,res);
+	db.suggestions.delete(req,res);
 });
 
 
 
-module.exports={
-	users:users,
-	ressources:ressources,
-	suggestions:suggestions
-};
+// module.exports={
+// 	users:users,
+// 	ressources:ressources,
+// 	suggestions:suggestions
+// };
+
+module.exports=apiRoutes;

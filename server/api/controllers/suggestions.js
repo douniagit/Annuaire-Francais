@@ -12,7 +12,7 @@ const suggestions={
 		.catch(err =>{
 			res.status(500).send('operation failed:\n' +err)
 		})
-	}
+	},
 	delete: (req,res)=>{
 		db.suggestions.delete({name:req.params})
 		.then(data=>{
