@@ -11,6 +11,7 @@
 
 .stickyDropDown{
   margin-top: 36px;
+
 }
 
 .grid {
@@ -18,6 +19,7 @@
   margin: 0 auto;
   width: 100%;
   background-color: lightgrey;
+
 }
 .grid-wrapper{
   margin: auto;
