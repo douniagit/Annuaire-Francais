@@ -2,7 +2,6 @@ import React from 'react';
 import './Card.css';
 import data from "../data/dataRessource.js";
 
-
 class Card extends React.Component {
 
   render() {
@@ -28,7 +27,9 @@ class Card extends React.Component {
                   </div>
                   <a href ={info.lien} className="button-card">GO</a>
                 </div>
-              </div>
+                
+          </div>
+
         )
         }
       </div>

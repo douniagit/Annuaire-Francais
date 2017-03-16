@@ -12,7 +12,9 @@
 .logo{
   height: 10vw;
 }
-
+.y{
+  z-index: 1000;
+}
 .scroll-button{
   padding: 10px;
   width: 10em;
@@ -28,7 +30,7 @@
   color: black;
 }
 .Header{
-  background-image: url('../../public/assets/car-1077060_960_720.jpg');
+  background-image: url('../../public/assets/polygonal-globe.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
