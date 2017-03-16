@@ -90,15 +90,16 @@
   border: none;
   font-size: 15px;
   color: white;
-  background: rgb(126, 126, 126);
+  background: #E20746;
   transition: background 0.5s, color 0.5s;
   cursor: pointer;
   box-shadow: 0 0 2px rgba(110, 110, 110, 0.67);
 }
 .add-ressource-button:hover{
   background-color: rgb(206, 206, 206);
-  color: white;
+  color: black;
   outline: 0;
+  font-weight: bold;
 }
 .add-ressource-button:focus{
   outline: 0;
