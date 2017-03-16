@@ -1,11 +1,9 @@
 .input {
-    z-index: 1000;
   justify-content: center;
   display: flex;
   position: relative;
 }
 .search-bar {
-  z-index: 1000;
   width: calc(80vw - 19px);
   /*height: 70px;*/
   font-size: 1vw;

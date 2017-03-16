@@ -4,16 +4,18 @@ import Logo from '../../public/assets/logo-cocoricourse.png';
 import Input from '../Input/Input.jsx';
 import {StickyContainer, Sticky} from 'react-sticky';
 
-
 class Header extends Component {
+  constructor(props){
+    super(props);
+  }
+
   render() {
-    console.log('this',this.props)
     return (
       <div className="Header">
         <div className= "main-header">
-          <img className="logo" src={Logo}></img>
+          <img className="logo" alt='Logo' src={Logo}></img>
             <Sticky>
-              <Input />
+              <Input options={this.props.options}  onSelectChange={this.props.onSelectChangeApp}/>
             </Sticky>
         </div>
       </div>
