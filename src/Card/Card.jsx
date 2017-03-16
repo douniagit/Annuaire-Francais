@@ -12,7 +12,6 @@ class Card extends React.Component {
     // console.log('results', results);
     return (
       <div className="cardContainer">
-<<<<<<< HEAD
           <h4>150 ressources gratuites à disposition </h4>
           {data.site.filter(
             (item) => {
@@ -46,14 +45,9 @@ class Card extends React.Component {
                   </div>
                   <a href={info.lien} className="button-card">GO</a>
                 </div>
-
-<<<<<<< HEAD
               </div>
             )
           }
-=======
-          </div>
->>>>>>> d73556129122b0788fdabb5a5f838851446bb97e
 
         )
         }
