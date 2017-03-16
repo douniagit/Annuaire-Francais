@@ -78,12 +78,17 @@ apiRoutes.delete('/suggestions', function (req,res){
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f011abe3ec712f42f62220f9bc8549776771dcc2
 // module.exports={
 // 	users:users,
-// 	ressources:ressources
+// 	ressources:ressources,
+//  suggestions:suggestions
 // };
 
 module.exports = apiRoutes;
+<<<<<<< HEAD
 =======
 module.exports={
 	users:users,
@@ -91,3 +96,6 @@ module.exports={
 	suggestions:suggestions
 };
 >>>>>>> 9e5d06053a64227c2e65ff3c7baafc7aa21594bd
+=======
+
+>>>>>>> f011abe3ec712f42f62220f9bc8549776771dcc2
