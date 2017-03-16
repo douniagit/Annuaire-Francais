@@ -58,7 +58,9 @@
   width: 80vw;
   height: 5vw;
 }
-
+.sub-under-menu a{
+  cursor: pointer;
+}
 .fr::before {
   padding: 0 0 3px 30px;
   content: ' ';

@@ -12,11 +12,12 @@ class Card extends React.Component {
           {data.site.map(info =>
           <div className="contentCard">
                 <div className="Card">
-                  <img src={info.images} alt="cocoricoPicture" className="img"/>
+                  <div className="img-container">
+                    <img src={info.images} alt={info.name} className="img"/>
+                  </div>
                   <div className="text">
                     <div className="title">{info.name}</div>
                     <div className="desc">{info.description}</div>
-                    <a href ={info.lien} className="button-card"></a>
                   </div>
                   <div className="wrapp">
                     <div className="icones">
@@ -25,13 +26,12 @@ class Card extends React.Component {
                       <img src="#" alt="format"/>
                     </div>
                   </div>
+                  <a href ={info.lien} className="button-card">GO</a>
                 </div>
-          </div>
+              </div>
         )
         }
       </div>
-
-
     );
   }
 }
