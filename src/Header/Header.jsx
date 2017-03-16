@@ -4,14 +4,16 @@ import Logo from '../../public/assets/logo-cocoricourse.png';
 import Input from '../Input/Input.jsx';
 import {StickyContainer, Sticky} from 'react-sticky';
 
+
 class Header extends Component {
   render() {
+    console.log('this',this.props)
     return (
       <div className="Header">
         <div className= "main-header">
           <img className="logo" src={Logo}></img>
             <Sticky>
-              <Input/>
+              <Input />
             </Sticky>
         </div>
       </div>

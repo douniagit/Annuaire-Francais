@@ -1,8 +1,7 @@
 import React from 'react';
 import './Card.css';
 import data from "../data/dataRessource.js";
-
-
+import "../Input/Input.jsx";
 class Card extends React.Component {
 
   render() {
@@ -26,7 +25,7 @@ class Card extends React.Component {
                       <img src="#" alt="format"/>
                     </div>
                   </div>
-                  <a href ={info.lien} className="button-card">GO</a>
+                  <a href={info.lien} className="button-card">GO</a>
                 </div>
               </div>
         )

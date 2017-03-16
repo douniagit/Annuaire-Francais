@@ -13,6 +13,7 @@ data.site.forEach((info) => {
 options = options.filter( (el, i, arr) => { return arr.indexOf(el) === i; } );
 options = options.map( (e) => { return {value: e, label: e}} );
 console.log(options);
+var results = [];
 
 var Input = React.createClass({
 	displayName: 'MultiSelectField',
@@ -24,10 +25,6 @@ var Input = React.createClass({
 			options: options,
 			value: [],
 		};
-	},
-	handleSelectChange (value) {
-		console.log('You\'ve selected:', value);
-		this.setState({ value });
 	},
 	render () {
 		return (

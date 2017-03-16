@@ -5,7 +5,13 @@ import Header from './Header/Header.jsx';
 import Grid from'./Grid/Grid.jsx';
 import './App.css';
 
+
+
 class App extends Component {
+  handleSelectChange (value) {
+		console.log('You\'ve selected:', value);
+		this.setState({ value });
+	}
   render() {
     return (
       <div className="App">
