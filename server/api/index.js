@@ -3,6 +3,7 @@
 
 const users = require('./controllers/users');
 const ressources= require('./controllers/ressources');
+const suggestions= require('./controllers/suggestions');
 const bodyParser=require('body-parser');
 const {Router} = require('express');
 
@@ -62,10 +63,25 @@ apiRoutes.delete('/ressources', function (req,res){
 	//methode de controller
 	api.ressources.delete(req,res);
 });
+//----------------Suggestions--------------
+
+apiRoutes.post('/suggestions', function (req,res){ //ou .get?
+	//methode de controller
+	api.suggestions.create(req,res);
+});
+
+apiRoutes.delete('/suggestions', function (req,res){
+	//methode de controller
+	api.suggestions.delete(req,res);
+});
+
+
 
 // module.exports={
 // 	users:users,
-// 	ressources:ressources
+// 	ressources:ressources,
+//  suggestions:suggestions
 // };
 
 module.exports = apiRoutes;
+
