@@ -10,7 +10,6 @@ class Dropdown extends Component {
    this.state = { isLanguageMouseOver: false };
    this.state = { isThematicMouseOver: false };
  }
-
  levelMouseOverHandler() {
    this.setState({ isLevelMouseOver: true });
  }
@@ -52,6 +51,7 @@ class Dropdown extends Component {
           <a  onMouseOver={(e) => this.languageMouseOverHandler(e)} onMouseOut={(e) => this.languageMouseOutHandler(e)} style={{background: (this.state.isLanguageMouseOver)? 'c3c1c1': 'dadada'}}>Language</a>
           <a  onMouseOver={(e) => this.thematicMouseOverHandler(e)} onMouseOut={(e) => this.thematicMouseOutHandler(e)} style={{background: (this.state.isThematicMouseOver)? 'c3c1c1': 'dadada'}}>Thematics</a>
         </div>
+      <div className="filter-option"></div>
         <div className="under-menu">
           <div className="sub-under-menu" onMouseOver={(e) => this.levelMouseOverHandler(e)} onMouseOut={(e) => this.levelMouseOutHandler(e)} style={{display: (this.state.isLevelMouseOver)? 'flex': 'none'}}>
             <a className="">Beginner</a>
