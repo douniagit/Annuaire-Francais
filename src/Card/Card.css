@@ -5,6 +5,7 @@
   width: 100%;
   height: auto;
   background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
 }
 .cardContainer h4{
   height: auto;
@@ -63,6 +64,11 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 5px;
+}
+h4 {
+  font-family: sans-serif, Quicksand;
+  margin-top: 8px;
 }
 .icones {
   margin-top:25px;
@@ -97,8 +103,14 @@
  display: flex;
  align-items: center;
  justify-content: center;
+ border-radius: 10px;
 }
 .button-card:hover{
   outline: 0;
   box-shadow: 5px 5px 2px rgba(110, 110, 110, 0.67);
+}
+.desc {
+  font-family: Quicksand, sans-serif;
+
+  font-size: 14px;
 }
