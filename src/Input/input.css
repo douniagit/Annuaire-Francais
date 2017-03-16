@@ -14,14 +14,11 @@
 
 }
 .border-anim:before{
-
   content: '';
 	position: absolute;
 	bottom: 0px;
   height: 100%;
 	width: 100%;
-  background-color: #b8b4b4;
-	border-bottom: 2px solid #b8b4b4;
   display: flex;
 }
 

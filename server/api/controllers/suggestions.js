@@ -3,7 +3,7 @@
 const db=require('../../database');
 
 const suggestions={
-	create: function(req,res)=>{
+	create: (req,res)=>{
 
 		db.suggestions.save()
 		.then(data =>{
