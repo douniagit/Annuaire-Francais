@@ -7,7 +7,7 @@ class Card extends React.Component {
   render() {
     return (
       <div className="cardContainer">
-          <h4>150 ressources gratuites à disposition </h4>
+          <h4>150 free resources available </h4>
           {data.site.map(info =>
           <div className="contentCard">
                 <div className="Card">
@@ -27,7 +27,7 @@ class Card extends React.Component {
                   </div>
                   <a href ={info.lien} className="button-card">GO</a>
                 </div>
-                
+
           </div>
 
         )
