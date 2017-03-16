@@ -97,6 +97,7 @@
  display: flex;
  align-items: center;
  justify-content: center;
+ border-radius: 5vw;
 }
 .button-card:hover{
   outline: 0;
