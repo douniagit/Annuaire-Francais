@@ -63,10 +63,9 @@ apiRoutes.delete('/ressources', function (req,res){
 	api.ressources.delete(req,res);
 });
 
-module.exports={
-	users:users,
-	ressources:ressources,
-	apiRoutes:apiRoutes
-};
+// module.exports={
+// 	users:users,
+// 	ressources:ressources
+// };
 
-// module.exports = apiRoutes;
+module.exports = apiRoutes;
