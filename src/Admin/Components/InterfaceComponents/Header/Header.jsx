@@ -4,6 +4,27 @@ import Logo2 from './logo.png';
 import './Header.css'
 
 class Header extends Component {
+  constructor(props) {
+  super(props);
+  this.state = {
+    value: '',
+    valueOne: '',
+    valueTwo: '',
+    valueThree: '',
+};
+
+  this.handleChange = this.handleChange.bind(this);
+  this.handleChange1 = this.handleChange1.bind(this);
+
+}
+
+handleChange(event) {
+  this.setState({value: event.target.value});
+}
+handleChange1(event) {
+  this.setState({valueOne: event.target.value});
+}
+
   render() {
     return (
       <div className="header">
@@ -19,12 +40,12 @@ class Header extends Component {
                   		<h2>Login page</h2>
                   		<a className="close" href="#">&times;</a>
                   		<div className="content">
-                    <form action="/action_page.php">
+                    <form>
                       Login:<br/>
-                      <input type="text" name="firstname" value=""></input>
+                      <input input type="text" name="prenom" value={this.state.value} onChange={this.handleChange} />
                       <br/>
                       Password:<br/>
-                      <input type="text" name="lastname" value=""></input>
+                      <input type="text" name="prenom" value={this.state.valueOne} onChange={this.handleChange1} />
                       <br/>
                     <div className="contain-btn">
                       <button className="button3 btn">Submit</button>

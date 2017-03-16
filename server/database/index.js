@@ -2,6 +2,7 @@
 const mongoose = require('mongoose');
 const users=require('./models/users');
 const ressources=require('./models/ressources');
+const suggestions=require('./models/suggestions');
 
 mongoose.connect('mongodb://localhost:27017/test-db'); //mettre l'url de mlab
 mongoose.connection.on('error',err=>{
@@ -22,9 +23,16 @@ process.on('SIGINT', function() {
 	});
 });
 
+<<<<<<< HEAD
 const db = {
 	users:mongoose.model('Users', users),
 	ressources:mongoose.model('Ressources',ressources)
+=======
+const db={
+	users:mongoose.model('Users',users),
+	ressources:mongoose.model('Ressources',ressources),
+	suggestions:mongoose.model('Suggestions',suggestions)
+>>>>>>> 9e5d06053a64227c2e65ff3c7baafc7aa21594bd
 }
 
 // db.users db.ressources
