@@ -1,15 +1,14 @@
 'use strict';
 const mongoose = require('mongoose');
 const users=require('./models/users');
-const products=require('./models/products');
-const ressources=require('./models/ressources')
+const ressources=require('./models/ressources');
 
 mongoose.connect('mongodb://localhost:27017/annuaire'); //mettre l'url de mlab
 mongoose.connection.on('error',err=>{
 	console.log('ERROR close MongoDB process',err)});
 
 mongoose.connection.on('connected',function(){
-	console.log('MongoDB connection succes on port 27017')
+	console.log('MongoDB connection succes on Mlab')
 });
 
 mongoose.connection.on('disconnected',function(){
@@ -18,7 +17,7 @@ mongoose.connection.on('disconnected',function(){
 
 process.on('SIGINT',function{
 	mongoose.connection.close(function(){
-		console.log('Server process terminated. closing MongoDB')
+		console.log('Server process terminated. closing Mlab')
 		process.exit(0);
 	});
 });
@@ -26,7 +25,6 @@ process.on('SIGINT',function{
 const db={
 	users:mongoose.model('Users',users)
 	ressources:mongoose.model('Ressources',ressources)
-	products:mongoose.model('Products')
 }
 
 // db.users db.ressources db.products

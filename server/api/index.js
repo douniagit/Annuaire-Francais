@@ -3,7 +3,6 @@
 
 const users = require('./controllers/users');
 const ressources= require('./controllers/ressources');
-const products= require('./controllers/products');
 const bodyParser=require('body-parser');
 
 
@@ -31,10 +30,6 @@ apiRoutes.post('/users', function (req,res){
 	api.users.update(req,res);
 });
 
-apiRoutes.post('/products', function (req,res){
-	
-	api.products.find(req,res);
-});
 
 //------------------Ressources--------------------
 
@@ -48,9 +43,22 @@ apiRoutes.get('/ressources', function (req,res){
 	api.ressources.find(req,res);
 });
 
+apiRoutes.post('/ressources', function (req,res){
+	//methode de controller
+	api.ressources.update(req,res);
+});
+
+apiRoutes.put('/ressources', function (req,res){
+	//methode de controller
+	api.ressources.add(req,res);
+});
+
+apiRoutes.delete('/ressources', function (req,res){
+	//methode de controller
+	api.ressources.delete(req,res);
+});
 
 module.exports={
 	users:users,
-	ressources:ressources,
-	products:products
+	ressources:ressources
 };
