@@ -11,6 +11,8 @@
   height: auto;
   width: 100%;
   text-align: center;
+  font-family: sans-serif, Quicksand;
+  margin-top: 8px;
 }
 .Card {
   width: 244px;
@@ -66,10 +68,7 @@
   text-align: center;
   margin-top: 5px;
 }
-h4 {
-  font-family: sans-serif, Quicksand;
-  margin-top: 8px;
-}
+
 .icones {
   margin-top:25px;
   width: 100%;
