@@ -1,7 +1,7 @@
 //notre serveur http
 const express = require('express');
 const app = express();
-const routes = require("./routes.js");
+const api = require("./api");
 
 
 app.use( function(request, response, next) {
@@ -12,8 +12,8 @@ app.use( function(request, response, next) {
   next();
 });
 
-app.use(routes);
+app.use('/api', api);
 
-app.listen(3000,(err)=>{
+app.listen(3001,(err)=>{
 	console.log('CocoriCourse in da place');
 })

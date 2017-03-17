@@ -3,7 +3,7 @@
 const db=require('../../database');
 
 const suggestions={
-	create: function(req,res)=>{
+	create: (req,res) => {
 
 		db.suggestions.save()
 		.then(data =>{
@@ -12,7 +12,7 @@ const suggestions={
 		.catch(err =>{
 			res.status(500).send('operation failed:\n' +err)
 		})
-	}
+	},
 	delete: (req,res)=>{
 		db.suggestions.delete({name:req.params})
 		.then(data=>{
