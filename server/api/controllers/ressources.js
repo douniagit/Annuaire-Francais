@@ -6,7 +6,7 @@ const db=require('../../database');
 
 const ressources={
 	create: (req,res)=>{
-		var newRessource= new db.ressources(req.body);
+		let newRessource= new db.ressources(req.body);
 		newRessource.save()
 		.then(data =>{
 			res.status(200).send('donnee ajoutee: \n' +data)
@@ -16,32 +16,33 @@ const ressources={
 		});
 	},
 	find:function(req,res){
-		db.ressources.find({name:req.params})
+		console.log('Bonjour je suis le find de ressource.');
+		newRessource.find({name:req.params.id})
 		.then(data=>{
 			res.status(200).send(data);
 		})
 		.catch(err=>{
 			res.status(500).send("operation failed"+ err)
 		})
-	}
-	findById:function(req,res){
-		db.ressources.findById({req.params.id}) //({id:req.params})
+	},
+	findById: function(req,res){
+		db.ressources.findById(req.params.id) //({id:req.params})
 		.then(data=>{
 			res.status(200).send(data);
 		})
 		.catch(err=>{
 			res.status(500).send("operation failed"+ err)
 		})
-	}
+	},
 	findByKeywords:function(req,res){
-		db.ressources.findByKeywords({req.params.keywords})//({keywords:req.params})
+		db.ressources.findByKeywords(req.params.keywords)//({keywords:req.params})
 		.then(data=>{
 			res.status(200).send(data);
 		})
 		.catch(err=>{
 			res.status(500).send("operation failed"+ err)
 		})
-	}
+	},
 	update: (req,res)=>{
 		db.ressources.update({name:req.params})
 		.then(data=>{
@@ -60,7 +61,7 @@ const ressources={
 			res.status(500).send("operation failed"+ err)
 		})
 	}
-	
+
 }
 
 module.exports=ressources;
