@@ -4,6 +4,7 @@ const users = require('./controllers/users');
 const ressources= require('./controllers/ressources');
 const suggestions= require('./controllers/suggestions');
 const bodyParser=require('body-parser');
+
 const { Router } = require('express');
 
 const apiRoutes = new Router();
@@ -16,22 +17,22 @@ apiRoutes.use(bodyParser.json());
 
 apiRoutes.post('/users', function (req,res) { //ou .get?
 	//methode de controller
-	users.create(req,res);
+	return users.create(req,res);
 });
 
 apiRoutes.get('/users', function (req,res){
 	//methode de controller
-	users.find(req,res);
+	return users.find(req,res);
 });
 
 apiRoutes.put('/users', function (req,res){
 
-	users.update(req,res);
+	return users.update(req,res);
 });
 
 apiRoutes.delete('/users', function (req,res){
 
-	users.delete(req,res);
+	return users.delete(req,res);
 });
 
 //------------------Ressources--------------------
@@ -67,14 +68,21 @@ apiRoutes.delete('/ressources', function (req,res){
 
 apiRoutes.post('/suggestions', function (req,res){ //ou .get?
 	//methode de controller
+<<<<<<< HEAD
+	return suggestions.create(req,res);
+=======
 	suggestions.create(req,res);
+>>>>>>> 1db1903b8408467236f4f45117a4ed3344883964
 });
 
 apiRoutes.delete('/suggestions', function (req,res){
 	//methode de controller
+<<<<<<< HEAD
+	return suggestions.delete(req,res);
+=======
 	suggestions.delete(req,res);
+>>>>>>> 1db1903b8408467236f4f45117a4ed3344883964
 });
-
 
 // module.exports={
 // 	users:users,
