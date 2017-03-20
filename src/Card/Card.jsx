@@ -1,7 +1,7 @@
 import React from 'react';
 import './Card.css';
 import data from "../data/dataRessource.js";
-import "../Input/Input.jsx";
+// import "../Input/Input.jsx";
 
 class Card extends React.Component {
   constructor(props){

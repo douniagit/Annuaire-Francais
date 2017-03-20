@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import Selection from '../../Components/InterfaceComponents/Selection/Selection.jsx'
 import Header from '../../Components/InterfaceComponents/Header/Header.jsx'
 
-import './Update.css'
-import '../../MonStyle/Boutton.css'
+import '../CssData/Style.css'
+import '../../MonStyle/CssStyle/Style.css'
 
 
 class App extends Component {
@@ -50,8 +50,8 @@ handleChange3(event) {
                 <li className="dropdownf">
                   <input type="checkbox" />
                   <a href="#" data-toggle="dropdown">LANGUE</a>
-                  <ul className="dropdown-menuf">
-                    <li><a className="parc" href="#"><input type="text" name="lastname" value=""></input><button>Confirm</button></a></li>
+                  <ul className="dropdown-menuf ulresp">
+                    <li><a className="parc" href="#"><input className="lastname" type="text" name="lastname" value=""></input><button>Confirm</button></a></li>
                   </ul>
                 </li>
 
@@ -64,8 +64,8 @@ handleChange3(event) {
                 <li className="dropdownf">
                   <input type="checkbox" />
                   <a href="#" data-toggle="dropdown">AGE</a>
-                  <ul className="dropdown-menuf">
-                    <li><a className="parc" href="#"><input type="text" name="lastname" value=""></input><button>Confirm</button></a></li>
+                  <ul className="dropdown-menuf ulresp">
+                    <li><a className="parc" href="#"><input className="lastname" type="text" name="lastname" value=""></input><button>Confirm</button></a></li>
                   </ul>
                 </li>
 
@@ -78,8 +78,8 @@ handleChange3(event) {
                 <li className="dropdownf">
                   <input type="checkbox" />
                   <a href="#" data-toggle="dropdown">FORMAT</a>
-                  <ul className="dropdown-menuf">
-                    <li><a className="parc" href="#"><input type="text" name="lastname" value=""></input><button>Confirm</button></a></li>
+                  <ul className="dropdown-menuf ulresp">
+                    <li><a className="parc" href="#"><input className="lastname" type="text" name="lastname" value=""></input><button>Confirm</button></a></li>
                   </ul>
                 </li>
 
@@ -92,8 +92,8 @@ handleChange3(event) {
                 <li className="dropdownf">
                   <input type="checkbox" />
                   <a href="#" data-toggle="dropdown">NIVEAU</a>
-                  <ul className="dropdown-menuf">
-                    <li><a className="parc" href="#"><input type="text" name="lastname" value=""></input><button>Confirm</button></a></li>
+                  <ul className="dropdown-menuf ulresp">
+                    <li><a className="parc" href="#"><input className="lastname" type="text" name="lastname" value=""></input><button>Confirm</button></a></li>
                   </ul>
                 </li>
 
@@ -105,7 +105,7 @@ handleChange3(event) {
 
 <div className='formul'>
 
-          <div className="">
+          <div>
               <div>
               <p className="lien">lien</p>
               <input type="text" name="prenom" value={this.state.value} onChange={this.handleChange} />
@@ -120,7 +120,7 @@ handleChange3(event) {
               </div>
               <div>
               <p className="lien">description</p>
-              <input type="text" name="prenom" value={this.state.valueThree} onChange={this.handleChange3} />
+              <textarea name="ameliorer" className="descr-btn"></textarea>
               </div>
               <button className="button3 btn">Submit</button>
             </div>

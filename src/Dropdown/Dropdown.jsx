@@ -4,11 +4,21 @@ import './dropdown.css';
 class Dropdown extends Component {
   constructor(props) {
    super(props);
-   this.state = { isLevelMouseOver: false };
-   this.state = { isFormatMouseOver: false };
-   this.state = { isAgeMouseOver: false };
-   this.state = { isLanguageMouseOver: false };
-   this.state = { isThematicMouseOver: false };
+   this.state = { isLevelMouseOver: false,
+                  isFormatMouseOver: false,
+                  isAgeMouseOver: false,
+                  isLanguageMouseOver: false,
+                  isThematicMouseOver: false,
+                  // value: this.props.value
+                };
+    console.log('DropDown',this.props.onDropDownClick)
+ }
+ handleDropDownCLick (value) {
+    //  console.log('You\'ve selected:', JSON.stringify(value));
+    //  console.log(this);
+     this.props.value.push(value);
+     this.props.onDropDownClick(this.props.value);
+    //  this.state.value = []
  }
  levelMouseOverHandler() {
    this.setState({ isLevelMouseOver: true });
@@ -42,6 +52,7 @@ class Dropdown extends Component {
  }
 
   render() {
+    console.log('Value dropdown:',this.state.value)
     return (
       <div className="dropdown">
         <div className="search-filter">
@@ -49,35 +60,32 @@ class Dropdown extends Component {
           <a  onMouseOver={(e) => this.formatMouseOverHandler(e)} onMouseOut={(e) => this.formatMouseOutHandler(e)} style={{background: (this.state.isFormatMouseOver)? 'c3c1c1': 'dadada'}}>Format</a>
           <a  onMouseOver={(e) => this.ageMouseOverHandler(e)} onMouseOut={(e) => this.ageMouseOutHandler(e)} style={{background: (this.state.isAgeMouseOver)? 'c3c1c1': 'dadada'}}>Age</a>
           <a  onMouseOver={(e) => this.languageMouseOverHandler(e)} onMouseOut={(e) => this.languageMouseOutHandler(e)} style={{background: (this.state.isLanguageMouseOver)? 'c3c1c1': 'dadada'}}>Language</a>
-          <a  onMouseOver={(e) => this.thematicMouseOverHandler(e)} onMouseOut={(e) => this.thematicMouseOutHandler(e)} style={{background: (this.state.isThematicMouseOver)? 'c3c1c1': 'dadada'}}>Thematics</a>
         </div>
       <div className="filter-option"></div>
         <div className="under-menu">
           <div className="sub-under-menu" onMouseOver={(e) => this.levelMouseOverHandler(e)} onMouseOut={(e) => this.levelMouseOutHandler(e)} style={{display: (this.state.isLevelMouseOver)? 'flex': 'none'}}>
-            <a className="">Beginner</a>
-            <a  className="">Intermediate</a>
-            <a  className="">Advanced</a>
+            <a onClick={(e)=>{this.handleDropDownCLick("Beginner")}} className="">Beginner</a>
+            <a onClick={(e)=>{this.handleDropDownCLick("Intermediate")}}className="">Intermediate</a>
+            <a onClick={(e)=>{this.handleDropDownCLick("Advanced")}} className="">Advanced</a>
           </div>
           <div className="sub-under-menu" onMouseOver={(e) => this.formatMouseOverHandler(e)} onMouseOut={(e) => this.formatMouseOutHandler(e)} style={{display: (this.state.isFormatMouseOver)? 'flex': 'none'}}>
-            <a  className=""><i className="fa fa-video-camera" aria-hidden="true"></i>Video</a>
-            <a  className=""><i className="fa fa-pencil" aria-hidden="true"></i>Write</a>
-            <a  className=""><i className="fa fa-gamepad" aria-hidden="true"></i>Game</a>
+            <a  onClick={(e)=>{this.handleDropDownCLick("Exercices")}} className=""><i className="fa fa-pencil" aria-hidden="true"></i>Exercices</a>
+            <a  onClick={(e)=>{this.handleDropDownCLick("Audios")}} className=""><i className="fa fa-headphones" aria-hidden="true"></i>Audios</a>
+            <a  onClick={(e)=>{this.handleDropDownCLick("Games")}} className=""><i className="fa fa-gamepad" aria-hidden="true"></i>Games</a>
+            <a  onClick={(e)=>{this.handleDropDownCLick("Articles")}} className=""><i className="fa fa-newspaper-o" aria-hidden="true"></i>Articles</a>
+            <a  onClick={(e)=>{this.handleDropDownCLick("Quizz")}} className=""><i className="fa fa-question-circle" aria-hidden="true"></i>Quizz</a>
+            <a  onClick={(e)=>{this.handleDropDownCLick("Lesson")}} className=""><i className="fa fa-file" aria-hidden="true"></i>Lessons</a>
+            <a  onClick={(e)=>{this.handleDropDownCLick("Videos")}} className=""><i className="fa fa-camera" aria-hidden="true"></i>Videos</a>
           </div>
           <div className="sub-under-menu" onMouseOver={(e) => this.ageMouseOverHandler(e)} onMouseOut={(e) => this.ageMouseOutHandler(e)} style={{display: (this.state.isAgeMouseOver)? 'flex': 'none'}}>
-            <a  className="">7-12</a>
-            <a  className="">12-18</a>
-            <a  className="">18+</a>
+            <a  onClick={(e)=>{this.handleDropDownCLick("Young")}} className="">Young</a>
+            <a  onClick={(e)=>{this.handleDropDownCLick("Teenagers")}} className="">Teenagers</a>
+            <a  onClick={(e)=>{this.handleDropDownCLick("Adults")}} className="">Adults</a>
           </div>
           <div className="sub-under-menu" onMouseOver={(e) => this.languageMouseOverHandler(e)} onMouseOut={(e) => this.languageMouseOutHandler(e)} style={{display: (this.state.isLanguageMouseOver)? 'flex': 'none'}}>
-            <a  className="en">English</a>
-            <a  className="fr">French</a>
-            <a  className="ara">Arab</a>
-          </div>
-          <div className="sub-under-menu" onMouseOver={(e) => this.thematicMouseOverHandler(e)} onMouseOut={(e) => this.thematicMouseOutHandler(e)} style={{display: (this.state.isThematicMouseOver)? 'flex': 'none'}}>
-            <a  className="">Politics</a>
-            <a  className="">Art</a>
-            <a  className="">Music</a>
-            <a  className="">Cinema</a>
+            <a  onClick={(e)=>{this.handleDropDownCLick("English")}} className="en">English</a>
+            <a  onClick={(e)=>{this.handleDropDownCLick("French")}} className="fr">French</a>
+            <a  onClick={(e)=>{this.handleDropDownCLick("Japanese")}} className="ara">Arabic</a>
           </div>
         </div>
       </div>
