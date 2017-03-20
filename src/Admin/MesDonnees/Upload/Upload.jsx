@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
+import Selection from '../../Components/InterfaceComponents/Selection/Selection.jsx'
+import Header from '../../Components/InterfaceComponents/Header/Header.jsx'
 
-import './Upload.css'
+import '../CssData/Style.css'
+import '../../MonStyle/CssStyle/Style.css'
 
 
 class App extends Component {
@@ -34,48 +37,99 @@ handleChange3(event) {
 }
     render() {
         return (
-          <div className="header">
 
-          <div id="bouton">
-            <div id="nav_language">
-              LANGUE
+          <div className="update-container">
+          <Header />
+        <div className="contain-update">
+          <Selection />
+          <div className="update">
+          <div className="filtre-container">
+            <div className="filtre">
+            <div className="filtre-contain">
+              <ul>
+                <li className="dropdownf">
+                  <input type="checkbox" />
+                  <a href="#" data-toggle="dropdown">LANGUE</a>
+                  <ul className="dropdown-menuf ulresp">
+                    <li><a className="parc" href="#"><input className="lastname" type="text" name="lastname" value=""></input><button>Confirm</button></a></li>
+                  </ul>
+                </li>
+
+              </ul>
             </div>
-            <div id="nav_age">
-              AGE
             </div>
-            <div id="nav_format">
-              FORMAT
+            <div className="filtre">
+            <div className="filtre-contain">
+              <ul>
+                <li className="dropdownf">
+                  <input type="checkbox" />
+                  <a href="#" data-toggle="dropdown">AGE</a>
+                  <ul className="dropdown-menuf ulresp">
+                    <li><a className="parc" href="#"><input className="lastname" type="text" name="lastname" value=""></input><button>Confirm</button></a></li>
+                  </ul>
+                </li>
+
+              </ul>
             </div>
-            <div id="nav_niveau">
-              NIVEAU
+            </div>
+            <div className="filtre">
+            <div className="filtre-contain">
+              <ul>
+                <li className="dropdownf">
+                  <input type="checkbox" />
+                  <a href="#" data-toggle="dropdown">FORMAT</a>
+                  <ul className="dropdown-menuf ulresp">
+                    <li><a className="parc" href="#"><input className="lastname" type="text" name="lastname" value=""></input><button>Confirm</button></a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </div>
+            </div>
+            <div className="filtre">
+            <div className="filtre-contain">
+              <ul>
+                <li className="dropdownf">
+                  <input type="checkbox" />
+                  <a href="#" data-toggle="dropdown">NIVEAU</a>
+                  <ul className="dropdown-menuf ulresp">
+                    <li><a className="parc" href="#"><input className="lastname" type="text" name="lastname" value=""></input><button>Confirm</button></a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </div>
             </div>
 
           </div>
 
 <div className='formul'>
 
-          <div className="container">
-            <div>
-            <p className="lien">lien</p>
-            <input type="text" name="prenom" value={this.state.value} onChange={this.handleChange} />
-            </div>
-            <div>
-            <p className="lien">nom</p>
-            <input type="text" name="prenom" value={this.state.valueOne} onChange={this.handleChange1} />
-            </div>
-            <div>
-            <p className="lien">icone</p>
-            <input type="text" name="prenom" value={this.state.valueTwo} onChange={this.handleChange2} />
-            </div>
-            <div>
-            <p className="lien">description</p>
-            <input type="text" name="prenom" value={this.state.valueThree} onChange={this.handleChange3} />
-            </div>
-            <button>valider</button>
+          <div>
+              <div>
+              <p className="lien">lien</p>
+              <input type="text" name="prenom" value={this.state.value} onChange={this.handleChange} />
+              </div>
+              <div>
+              <p className="lien">nom</p>
+              <input type="text" name="prenom" value={this.state.valueOne} onChange={this.handleChange1} />
+              </div>
+              <div>
+              <p className="lien">icone</p>
+              <input type="text" name="prenom" value={this.state.valueTwo} onChange={this.handleChange2} />
+              </div>
+              <div>
+              <p className="lien">description</p>
+              <textarea name="ameliorer" className="descr-btn"></textarea>
+              </div>
+              <button className="button3 btn">Submit</button>
             </div>
 
 </div>
+          </div>
 
+
+          </div>
           </div>
 
 
