@@ -6,6 +6,12 @@
   border-bottom: 0.3vw solid #c3c1c1;
 }
 
+@media (max-width: 992px) {
+  .dropdown {
+    display: none;
+  }
+}
+
 .search-filter {
   background: #dadada;
   display: flex;
@@ -16,9 +22,10 @@
   margin-bottom: 50px;
   position: relative;
   margin: 0;
-  height: 4vw;
+  height: 50px;
   background-color: #dadada;
 }
+
 
 .search-filter a{
   text-decoration: none;
@@ -41,26 +48,34 @@
   justify-content: space-around;
   align-items: center;
   width: 80vw;
-  background: #c3c1c1;
+  background: #dadada;
+  border-bottom: 0.3vw solid #c3c1c1;
 }
 
 .under-menu a{
   text-decoration: none;
   color: white;
   margin: 0.3vw 0;
+  width: 20vw;
+  height: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items:center;
 }
 
 .under-menu a:hover{
   font-weight: bold;
+  background: #c3c1c1;
 }
 
 .sub-under-menu{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   width: 80vw;
-  height: 5vw;
-  background-color: #c3c1c1;
+  /*height: 5vw;*/
+  background-color: #dadada;
 }
 .sub-under-menu a{
   cursor: pointer;
@@ -73,10 +88,10 @@
   height: 24px;
 }
 
-.jp::before {
+.ara::before {
   padding: 0 0 3px 30px;
   content: ' ';
-  background: url('../../public/assets/icons/japan.png') no-repeat;
+  background: url('../../public/assets/icons/saudi-arabia.png') no-repeat;
   width: 24px;
   height: 24px;
 }

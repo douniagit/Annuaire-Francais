@@ -28,11 +28,13 @@ handleChange1(event) {
   render() {
     return (
       <div className="header">
-              <div className="header">
-                <img className="logo2" src={Logo2}></img>
+
+              <div className="imgContain">  <img className="logo2" src={Logo2}></img></div>
                 <div className="button-container">
+                <div className="btn-contain">
                   <a className="button button3" href="#popup1">Login</a>
                   <button className="button3">Log out</button>
+                </div>
 
 
                   <div id="popup1" className="overlay">
@@ -56,7 +58,7 @@ handleChange1(event) {
                   	</div>
                   </div>
                 </div>
-              </div>
+
 
       </div>
     );
