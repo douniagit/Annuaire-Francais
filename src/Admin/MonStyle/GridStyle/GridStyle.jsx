@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Selection from '../Components/InterfaceComponents/Selection/Selection.jsx'
-import Header from '../Components/InterfaceComponents/Header/Header.jsx'
+import Selection from '../../Components/InterfaceComponents/Selection/Selection.jsx'
+import Header from '../../Components/InterfaceComponents/Header/Header.jsx'
 
-import './Boutton.css'
+import '../CssStyle/Style.css'
 
 class Boutton extends Component {
   render() {
@@ -12,6 +12,10 @@ class Boutton extends Component {
             <Header />
           <div className="contain">
             <Selection />
+          <div className="resp">
+          <div className="containtitle">
+            <h2 className="sectiontitle">Grid Style</h2>
+          </div>
             <div className="test">
             <div className="container-d">
               <ul>
@@ -67,6 +71,7 @@ class Boutton extends Component {
             </div>
 
             </div>
+          </div>
             </div>
       </div>
     );
