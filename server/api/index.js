@@ -45,13 +45,13 @@ apiRoutes.post('/ressources', function (req,res){ //ou .get?
 apiRoutes.get('/ressources', function (req,res){
 	//methode de controller
 	console.log('Bonjour je suis la route get ressources');
-	ressources.find(req,res);
+	return ressources.find(req,res);
 	console.log('Je suis la méthode find.');
 });
 
 apiRoutes.put('/ressources', function (req,res){
 	//methode de controller
-	ressources.update(req,res);
+	return ressources.update(req,res);
 });
 
 // apiRoutes.post('/ressources', function (req,res){
@@ -61,18 +61,18 @@ apiRoutes.put('/ressources', function (req,res){
 
 apiRoutes.delete('/ressources', function (req,res){
 	//methode de controller
-	ressources.delete(req,res);
+	return ressources.delete(req,res);
 });
 //----------------Suggestions--------------
 
 apiRoutes.post('/suggestions', function (req,res){ //ou .get?
 	//methode de controller
-	api.suggestions.create(req,res);
+	suggestions.create(req,res);
 });
 
 apiRoutes.delete('/suggestions', function (req,res){
 	//methode de controller
-	api.suggestions.delete(req,res);
+	suggestions.delete(req,res);
 });
 
 
