@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../Components/InterfaceComponents/Header/Header.jsx'
-import Selection from '../Components/InterfaceComponents/Selection/Selection.jsx'
+//import Selection from '../Components/InterfaceComponents/Selection/Selection.jsx'
 
 
 class Interf extends Component {
@@ -8,7 +8,7 @@ class Interf extends Component {
     return (
       <div className="selection">
         <Header />
-        <Selection />
+        {/*<Selection />*/}
 
 
       </div>

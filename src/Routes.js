@@ -4,10 +4,12 @@ import App from './App.js';
 import Admin from './Admin/MonStyle/Boutton.jsx';
 
 
+
 const Routes = (props) => (
   <Router {...props}>
     <Route path="/" component={App} />
     <Route path="/admin" component={Admin}/>
+  
   </Router>
 );
 

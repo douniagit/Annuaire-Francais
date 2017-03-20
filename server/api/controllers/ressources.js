@@ -6,18 +6,21 @@ const db=require('../../database');
 
 const ressources={
 	create: (req,res)=>{
+		console.log('req.body : ', JSON.stringify(req.body));
 		let newRessource= new db.ressources(req.body);
 		newRessource.save()
 		.then(data =>{
+			console.log('ok : ', JSON.stringify(data));
 			res.status(200).send('donnee ajoutee: \n' +data)
 		})
 		.catch(err =>{
+			console.log('ko : ', JSON.stringify(err));
 			res.status(500).send('donnee failed:\n' +err)
 		});
 	},
 	find:function(req,res){
 		console.log('Bonjour je suis le find de ressource.');
-		newRessource.find({name:req.params.id})
+		db.ressources.find({name:req.params.id})
 		.then(data=>{
 			res.status(200).send(data);
 		})

@@ -4,7 +4,6 @@ const db=require('../../database');
 
 const suggestions={
 	create: (req,res)=>{
-
 		db.suggestions.save()
 		.then(data =>{
 			res.status(200).send('operation reussi: \n' +data)
