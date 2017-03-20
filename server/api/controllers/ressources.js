@@ -7,7 +7,7 @@ const db=require('../../database');
 const ressources={
 	create: (req,res)=>{
 		console.log('req.body : ', JSON.stringify(req.body));
-		let newRessource= new db.ressources(req.body);
+		let newRessource= new ressources(req.body);
 		newRessource.save()
 		.then(data =>{
 			console.log('ok : ', JSON.stringify(data));
@@ -20,7 +20,7 @@ const ressources={
 	},
 	find:function(req,res){
 		console.log('Bonjour je suis le find de ressource.');
-		db.ressources.find({name:req.params.id})
+		ressources.find({name:req.params.name})
 		.then(data=>{
 			res.status(200).send(data);
 		})
@@ -30,7 +30,7 @@ const ressources={
 	},
 
 	findById: function(req,res){
-		db.ressources.findById(req.params.id) //({id:req.params})
+		ressources.findById(req.params.id) //({id:req.params})
 		.then(data=>{
 			res.status(200).send(data);
 		})
@@ -39,7 +39,7 @@ const ressources={
 		})
 	},
 	findByKeywords:function(req,res){
-		db.ressources.findByKeywords(req.params.keywords)//({keywords:req.params})
+		ressources.findByKeywords(req.params.keywords)//({keywords:req.params})
 		.then(data=>{
 			res.status(200).send(data);
 		})
@@ -48,7 +48,7 @@ const ressources={
 		})
 	},
 	update: (req,res)=>{
-		db.ressources.update({name:req.params})
+		ressources.update({name:req.params})
 		.then(data=>{
 			res.status(200).send(data);
 		})
@@ -57,7 +57,7 @@ const ressources={
 		})
 	},
 	delete: (req,res)=>{
-		db.ressources.delete({name:req.params})
+		ressources.delete({name:req.params})
 		.then(data=>{
 			res.status(200).send(data);
 		})
