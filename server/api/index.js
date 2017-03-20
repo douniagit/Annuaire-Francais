@@ -68,20 +68,13 @@ apiRoutes.delete('/ressources', function (req,res){
 
 apiRoutes.post('/suggestions', function (req,res){ //ou .get?
 	//methode de controller
-<<<<<<< HEAD
 	return suggestions.create(req,res);
-=======
-	suggestions.create(req,res);
->>>>>>> 1db1903b8408467236f4f45117a4ed3344883964
 });
 
 apiRoutes.delete('/suggestions', function (req,res){
 	//methode de controller
-<<<<<<< HEAD
+
 	return suggestions.delete(req,res);
-=======
-	suggestions.delete(req,res);
->>>>>>> 1db1903b8408467236f4f45117a4ed3344883964
 });
 
 // module.exports={
