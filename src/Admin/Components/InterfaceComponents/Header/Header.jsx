@@ -48,7 +48,7 @@ handleChange1(event) {
                       <input type="text" name="prenom" value={this.state.valueOne} onChange={this.handleChange1} />
                       <br/>
                     <div className="contain-btn">
-                      <button className="button3 btn">Submit</button>
+      <button className="button3 btn">Submit</button>
                       <button className="button3 btn">Forgot Password ?</button>
                     </div>
                   </form>
