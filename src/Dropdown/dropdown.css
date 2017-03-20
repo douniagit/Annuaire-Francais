@@ -88,10 +88,10 @@
   height: 24px;
 }
 
-.jp::before {
+.ara::before {
   padding: 0 0 3px 30px;
   content: ' ';
-  background: url('../../public/assets/icons/japan.png') no-repeat;
+  background: url('../../public/assets/icons/saudi-arabia.png') no-repeat;
   width: 24px;
   height: 24px;
 }

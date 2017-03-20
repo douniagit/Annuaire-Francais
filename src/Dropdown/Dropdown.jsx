@@ -85,7 +85,7 @@ class Dropdown extends Component {
           <div className="sub-under-menu" onMouseOver={(e) => this.languageMouseOverHandler(e)} onMouseOut={(e) => this.languageMouseOutHandler(e)} style={{display: (this.state.isLanguageMouseOver)? 'flex': 'none'}}>
             <a  onClick={(e)=>{this.handleDropDownCLick("English")}} className="en">English</a>
             <a  onClick={(e)=>{this.handleDropDownCLick("French")}} className="fr">French</a>
-            <a  onClick={(e)=>{this.handleDropDownCLick("Japanese")}} className="jp">Japanese</a>
+            <a  onClick={(e)=>{this.handleDropDownCLick("Japanese")}} className="ara">Arabic</a>
           </div>
         </div>
       </div>
