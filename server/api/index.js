@@ -4,6 +4,7 @@ const users = require('./controllers/users');
 const ressources= require('./controllers/ressources');
 const suggestions= require('./controllers/suggestions');
 const bodyParser=require('body-parser');
+
 const { Router } = require('express');
 
 const apiRoutes = new Router();
@@ -72,9 +73,9 @@ apiRoutes.post('/suggestions', function (req,res){ //ou .get?
 
 apiRoutes.delete('/suggestions', function (req,res){
 	//methode de controller
+
 	return suggestions.delete(req,res);
 });
-
 
 // module.exports={
 // 	users:users,

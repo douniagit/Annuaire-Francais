@@ -3,10 +3,16 @@ const mongoose = require('mongoose');
 const users=require('./models/users');
 const ressources=require('./models/ressources');
 
+<<<<<<< HEAD
+mongoose.connect('mongodb://admin:1234@ds129050.mlab.com:29050/test-db'); //mettre l'url de mlab
+
+// mongoose.connect('mongodb://localhost:27017/test-db'); //mettre l'url de mlab
+=======
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://admin:1234@ds129050.mlab.com:29050/test-db'); //mlab
 
 // mongoose.connect('mongodb://localhost:27017/test-db'); //local
+>>>>>>> 1db1903b8408467236f4f45117a4ed3344883964
 mongoose.connection.on('error',err=>{
 	console.log('ERROR close MongoDB process',err)});
 
