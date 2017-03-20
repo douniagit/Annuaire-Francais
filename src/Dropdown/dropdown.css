@@ -6,6 +6,12 @@
   border-bottom: 0.3vw solid #c3c1c1;
 }
 
+@media (max-width: 992px) {
+  .dropdown {
+    display: none;
+  }
+}
+
 .search-filter {
   background: #dadada;
   display: flex;
@@ -19,6 +25,7 @@
   height: 50px;
   background-color: #dadada;
 }
+
 
 .search-filter a{
   text-decoration: none;
