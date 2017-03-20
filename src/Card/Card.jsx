@@ -43,7 +43,7 @@ class Card extends React.Component {
                       <img src="#" alt="format"/>
                     </div>
                   </div>
-                  <a href={info.lien} className="button-card">GO</a>
+                  <a href={info.lien} className="button-card" target="_blank">GO</a>
                 </div>
               </div>
             )
