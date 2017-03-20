@@ -29,14 +29,20 @@ class App extends Component {
     this.setState({
       value: value
     })
-    console.log(value)
+    console.log("App Select Value",value)
+  }
+  onDropDownClickApp(value){
+    this.setState({
+      value: value
+    })
+    console.log("App DropDown Value",value)
   }
   render() {
     return (
       <div className="App">
         <StickyContainer>
-          <Header options={this.state.options} onSelectChangeApp={this.onSelectChangeApp.bind(this)}></Header>
-          <Grid value={this.state.value}/>
+          <Header options={this.state.options} value={this.state.value} onSelectChangeApp={this.onSelectChangeApp.bind(this)}></Header>
+          <Grid value={this.state.value} onDropDownClickApp={this.onDropDownClickApp.bind(this)}/>
           <Footer></Footer>
         </StickyContainer>
       </div>

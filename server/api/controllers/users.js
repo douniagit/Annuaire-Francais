@@ -1,9 +1,9 @@
 'use strict';
 
-const db=require('../../database');
+const db = require('../../database');
 
-const users={
-	create: (req,res)=>{
+const users = {
+	create : (req,res)=>{
 		//je cree mon user
 		var newUser= new db.users(req.body); //ca signifie var newUser= new UserSchema({name:'admin'})
 		newUser.save()
@@ -13,7 +13,17 @@ const users={
 		.catch(err =>{
 			res.status(500).send('operation failed:\n' +err)
 		})
-	}
+	},
+	find:function(req,res){
+		console.log('Bonjour je suis le find de ressource.');
+		db.users.find({name:req.params.id})
+		.then(data=>{
+			res.status(200).send(data);
+		})
+		.catch(err=>{
+			res.status(500).send("operation failed"+ err)
+		})
+	},
 }
 
 // .post(function(req,res){

@@ -15,7 +15,7 @@ class Header extends Component {
         <div className= "main-header">
           <img className="logo" alt='Logo' src={Logo}></img>
             <Sticky className="y">
-              <Input options={this.props.options}  onSelectChange={this.props.onSelectChangeApp}/>
+              <Input options={this.props.options} value={this.props.value} onSelectChange={this.props.onSelectChangeApp}/>
             </Sticky>
         </div>
       </div>
