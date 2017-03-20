@@ -1,0 +1,97 @@
+.contain-update{
+  width: 100%;
+  display:flex;
+}
+
+.update{
+  margin-top: 60px;
+  margin-left: 200px;
+  width: 800px;
+}
+
+@media screen and (max-width: 1445px) {
+  .update{
+    margin-left: 130px;
+  }
+}
+
+@media screen and (max-width: 1375px) {
+  .filtre-container{
+    flex-direction: column;
+  }
+  .update{
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .update{
+    width: 545px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .update{
+    width: 370px;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .update{
+    width: 250px;
+  }
+  .lastname{
+    margin-left: -11px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .update{
+    margin-left: 60px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .update{
+   margin-left: 10px;
+  }
+}
+
+.ulresp{
+  height: 70px;
+}
+
+.parc{
+  text-align: center ;
+}
+
+.filtre-container{
+  display: flex;
+  justify-content: space-around;
+}
+.filtre{
+  margin-left: 20px;
+}
+.formul{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.button3 {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.dropdownf{
+  list-style-type: none;
+}
+.descr-btn{
+  height: 200px;
+}
