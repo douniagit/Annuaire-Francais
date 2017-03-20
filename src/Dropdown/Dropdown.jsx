@@ -71,7 +71,7 @@ class Dropdown extends Component {
           <div className="sub-under-menu" onMouseOver={(e) => this.languageMouseOverHandler(e)} onMouseOut={(e) => this.languageMouseOutHandler(e)} style={{display: (this.state.isLanguageMouseOver)? 'flex': 'none'}}>
             <a  className="en">English</a>
             <a  className="fr">French</a>
-            <a  className="jp">Japanese</a>
+            <a  className="ara">Arab</a>
           </div>
           <div className="sub-under-menu" onMouseOver={(e) => this.thematicMouseOverHandler(e)} onMouseOut={(e) => this.thematicMouseOutHandler(e)} style={{display: (this.state.isThematicMouseOver)? 'flex': 'none'}}>
             <a  className="">Politics</a>
