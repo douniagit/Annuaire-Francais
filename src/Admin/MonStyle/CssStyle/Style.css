@@ -84,13 +84,18 @@
   background:transparent;
 }
 
+.header{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .sectiontitle{
   text-align: center;
-  background-color: #f44336;
+  background-color: #F44336;
   color: white;
   font-size: 30px;
   width: 500px;
   margin-left: 200px;
+  border-radius: 2vw;
 }
 .containtitle{
   width: 100%;
@@ -109,6 +114,7 @@
   .resp{
     margin-left: -245px;
   }
+
 }
 
 .color{
@@ -167,6 +173,7 @@ body {
     font-family: "Lato", Helvetica, Arial;
     font-size: 16px;
     background: #f4f4f4;
+    margin: 0 auto;
 }
 
 *,
