@@ -1,7 +1,6 @@
 import React from 'react';
 import { Router, Route} from 'react-router';
 import App from './App.js';
-import Admin from '/Admin/MonStyle/Boutton.jsx';
 import AdminInterface from './Admin/Interface/Interface.jsx';
 import HeaderStyle from './Admin/MonStyle/HeaderStyle/HeaderStyle.jsx';
 import GridStyle from './Admin/MonStyle/GridStyle/GridStyle.jsx';
